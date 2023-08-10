@@ -1,2 +1,4 @@
-# Triweb-Learning
-3 months Internship program
+                                                                  # Triweb-Learning
+                                                              3 months Internship program
+1: Github - Learn git and github.Learn all commands (most used) and apply those commands in task as well. Make a repo and make a initial commit.
+2:HTML - Learn HTML basics and get deeper into it. I get the knowledge of different different elements. Created a registration form and a daily routine time table. I explore HTML elements and learn a lot from these tasks.
