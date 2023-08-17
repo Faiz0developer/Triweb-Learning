@@ -11,6 +11,7 @@ function validateUser(name, password) {
 
     return "in try";
   } catch (err) {
+    console.log(err);
     return "fail in catch";
   } finally {
     console.log("inside finally block");
