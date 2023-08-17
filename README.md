@@ -29,3 +29,5 @@ control flow and coniditon: Practice if-else, switch statement in coding.
 error handling: Learn this concept and apply this in code. Get to know how to handle errors and we can build our custome error.
 
 loops: Learn about loops and different type of loops (for, while, do-while) and implement them all in code. Get to know about nested loop and practice it well. Learn about break statements, continue statements and labels and practice them with loops. I get to know about how label actually works. Implement for-in, for-of loop in code. And got the idea about forEach method and practice it as well.
+
+function: Learn different concept of function and implement them all as well. Like I implement pass by value arguement and pass by reference arguement, scoping and hoisting of function, recursion function, different method of recursion, nested function and condition function. 
