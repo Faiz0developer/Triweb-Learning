@@ -30,3 +30,9 @@ operators and variables: Do some coding using var,let and const and understand d
 hoisting: Learn concept of hoisting. How hositing works for function and function expression, as well for variables declared using ver,  let and const.
 
 event: Practice some events using addEventListener and made small demo project called image-changer.
+
+data Type: Apply knowledge of data types and data type converion in coding.
+
+control flow and coniditon: Practice if-else, switch statement in coding.
+
+error handling: Learn this concept and apply this in code. Get to know how to handle errors and we can build our custome error.
