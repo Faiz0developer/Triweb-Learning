@@ -39,3 +39,7 @@ Function parameter: Learn and implement this parameter concpet.In this module I 
 closure: Learn deep about closure. How closure works, what actually closure is, I get these all knowledge and practice it as well.
 
 arrow function: Practice arrow function and get to know advantage of arrow function.
+
+Operators: Assignment, arithmetic, relational i.e. in, instance of, logical, bitwise, conditional, comma.
+Array destructuring: Learn and practice Array destructing.
+Types of expressions and their use: Arithmetic, string, logical, primary(this), left hand side(new, super). Learn all these operators and expression.
