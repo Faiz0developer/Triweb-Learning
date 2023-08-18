@@ -51,3 +51,8 @@ Number object methods: Learnand implement methods of Number object like, parseIn
 Math Object: Get knowledge of Math Object and implement in practice as well. Like random, floor, round,max,min,ceil etc.
 
 Date: Learn all concepts and methods of Date and implement as well. Make a small digital clock as well.
+
+String: Learn and implement concepts of String. Different method to initialise a string (new String, String)  using single quote, double quote and template literals.
+
+String Method: Learn and implement different methods of strings like, indexOf, lastIndexOf, replace,replaceAll,concat, sliced, substr,subString,toLower,toUpper,startsWith,endsWith etc.
+
