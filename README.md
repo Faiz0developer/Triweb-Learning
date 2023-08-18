@@ -12,7 +12,7 @@ Explore css basics and learn deep concepts of css. Style registration form and t
 
 #4:Javascript
 
-day-1
+day-1 ->
 
 Introduction to Javacript: Learn why javascript is so important, famous and most used.
 
@@ -30,4 +30,12 @@ error handling: Learn this concept and apply this in code. Get to know how to ha
 
 loops: Learn about loops and different type of loops (for, while, do-while) and implement them all in code. Get to know about nested loop and practice it well. Learn about break statements, continue statements and labels and practice them with loops. I get to know about how label actually works. Implement for-in, for-of loop in code. And got the idea about forEach method and practice it as well.
 
-function: Learn different concept of function and implement them all as well in code. Like I implement pass by value arguement and pass by reference arguement, scoping and hoisting of function, recursion function, different method of recursion, nested function and condition function. 
+function: Learn different concept of function and implement them all as well in code. Like I implement pass by value arguement and pass by reference arguement, scoping and hoisting of function, recursion function, different method of recursion, nested function and condition function.
+
+day-2 ->
+
+Function parameter: Learn and implement this parameter concpet.In this module I learn and practice about normal parameters and then arguements keyword and then REST paramter. Learn about defalt parameter as well.
+
+closure: Learn deep about closure. How closure works, what actually closure is, I get these all knowledge and practice it as well.
+
+arrow function: Practice arrow function and get to know advantage of arrow function.
