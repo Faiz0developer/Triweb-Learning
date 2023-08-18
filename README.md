@@ -43,3 +43,11 @@ arrow function: Practice arrow function and get to know advantage of arrow funct
 Operators: Assignment, arithmetic, relational i.e. in, instance of, logical, bitwise, conditional, comma.
 Array destructuring: Learn and practice Array destructing.
 Types of expressions and their use: Arithmetic, string, logical, primary(this), left hand side(new, super). Learn all these operators and expression.
+
+Number data type: Learn and implement different concepts and methods of Number data type. Like I learn octal,decimal.binary number, exponential number, conversion of a number to exponential number.
+
+Number object methods: Learnand implement methods of Number object like, parseInt, parseFloat, toExponential, toFixed etc.
+
+Math Object: Get knowledge of Math Object and implement in practice as well. Like random, floor, round,max,min,ceil etc.
+
+Date: Learn all concepts and methods of Date and implement as well. Make a small digital clock as well.
