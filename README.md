@@ -60,3 +60,5 @@ String Method: Learn and implement different methods of strings like, indexOf, l
 day-3 ->
 
 RegExp -> Learn different concepts and methods of RegExp and implement them in code as well. Like I practice match, search and test method. Implement repeat and repeatAll using RegExp.
+
+Array -> Learn deep and pratice concepts of array. Practice different methods of Arraylike map,filter, reduce, some,every,sort,splice and so on. Get to know about multi dimension array. 
