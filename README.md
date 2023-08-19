@@ -71,3 +71,7 @@ WeakMap: Key of WeakMap is always be object. I practice this in code.
 Set:  Learn and implement methods os Set. Set is like an array but not array. Set are collection of unique values.It also maintain the order of insertion. Also implement coversion of array to set and vice-versa.
 
 Object: Learn and implement concepts of Objects. Like different ways of initialization of object, dot notation,brcket notation, prototype inheritence. Also practice getter and setter function.
+
+Prototype inheritance: Learn concept of prototype inheritance and implement it in code.
+
+Promise: Learn and imlement Promise. I get to know how promise work and how to handler resolve and reject promise using then and catch respectively.Also implement then chaining and get to know how event loop works.
