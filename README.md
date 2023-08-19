@@ -62,3 +62,12 @@ day-3 ->
 RegExp -> Learn different concepts and methods of RegExp and implement them in code as well. Like I practice match, search and test method. Implement repeat and repeatAll using RegExp.
 
 Array -> Learn deep and pratice concepts of array. Practice different methods of Arraylike map,filter, reduce, some,every,sort,splice and so on. Get to know about multi dimension array. 
+
+
+Map: Learn Map object and implement its set,size and has method. Map is key-value pair object which maintain its order
+
+WeakMap: Key of WeakMap is always be object. I practice this in code.
+
+Set:  Learn and implement methods os Set. Set is like an array but not array. Set are collection of unique values.It also maintain the order of insertion. Also implement coversion of array to set and vice-versa.
+
+Object: Learn and implement concepts of Objects. Like different ways of initialization of object, dot notation,brcket notation, prototype inheritence. Also practice getter and setter function.
