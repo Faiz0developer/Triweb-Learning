@@ -56,3 +56,7 @@ String: Learn and implement concepts of String. Different method to initialise a
 
 String Method: Learn and implement different methods of strings like, indexOf, lastIndexOf, replace,replaceAll,concat, sliced, substr,subString,toLower,toUpper,startsWith,endsWith etc.
 
+
+day-3 ->
+
+RegExp -> Learn different concepts and methods of RegExp and implement them in code as well. Like I practice match, search and test method. Implement repeat and repeatAll using RegExp.
