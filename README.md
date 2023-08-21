@@ -75,3 +75,10 @@ Object: Learn and implement concepts of Objects. Like different ways of initiali
 Prototype inheritance: Learn concept of prototype inheritance and implement it in code.
 
 Promise: Learn and imlement Promise. I get to know how promise work and how to handler resolve and reject promise using then and catch respectively.Also implement then chaining and get to know how event loop works.
+
+
+day-4 -->>
+
+Iterator: Learn new concept Iterator. Got to know how iterator  works, why it is useful, what iterables are. Implement this in code as well.
+
+Generator: Generator is another form of iterator. Implement generator functions. Got to know how generator works, how generator is different from normal function.
