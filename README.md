@@ -83,3 +83,5 @@ Generator: Generator is another form of iterator. Implement generator functions.
 Project -1 : Make a project using different concepts of javacript. In this project, user can add its name and can also deletet it. User can move his/her name in red box by clicking on 'Move to Red', in green box by clicking on 'Move to Green', in blue box by clicking on 'Move to Blue', in yellow box by clicking on 'Move to Yellow'.
 
 Add validation to HTML form: I add basic validation to html form using DOM manipulation in javascript.
+
+MySQL: Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
