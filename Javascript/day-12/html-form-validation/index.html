@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Contact Us</h1>
+    <div class="container">
+      <h1>Let's come to the new opportunity in Triweb.</h1>
+      <form class="form">
+        <h2>Registration Form</h2>
+        <div class="firstNameContainer">
+          <label for="firstName">First Name*</label>
+          <input type="text" id="firstName" />
+        </div>
+        <div class="lastNameContainer">
+          <label for="lastName">Last Name*</label>
+          <input type="text" id="lastName" />
+        </div>
+        <div class="emailContainer">
+          <label for="email">Email*</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="contactContainer">
+          <label for="contact">Contact*</label>
+          <input type="number" id="contact" />
+        </div>
+        <div class="dobContainer">
+          <label for="dob">Date of Birth*</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="ageContainer">
+          <label for="age">Age*</label>
+          <input type="number" id="age" />
+        </div>
+        <div>
+          <fieldset>
+            <legend>Gender</legend>
+            <div>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" id="other" name="gender" />
+              <label for="other">Other</label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="resuemFileContainer">
+          <label for="resume">Resume File*</label>
+          <input type="file" name="resume" id="resume" />
+        </div>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #134e4a;
+}
+body > h1 {
+  text-align: center;
+  font-size: 70px;
+  color: #f16311;
+  font-weight: 600;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 30px;
+}
+.container h1 {
+  width: 30%;
+  margin-left: 40px;
+  font-size: 60px;
+  color: white;
+  margin-top: 180px;
+  margin-left: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 30px;
+  width: 60%;
+  align-content: center;
+  margin: 30px 0px;
+  gap: 20px;
+  border-radius: 10px;
+}
+.form h2 {
+  font-size: 35px;
+  color: white;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 4px;
+}
+label,
+legend {
+  color: white;
+  font-size: 16px;
+}
+input {
+  padding: 6px 0px;
+  border-radius: 5px;
+  border: none;
+}
+input:focus {
+  outline: none;
+  border: 2px solid #7c2d12;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #f16311;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 50%;
+  border: 1px solid #f16311;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7c2d12;
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.message {
+  color: red;
+}

@@ -52,23 +52,21 @@ Math Object: Get knowledge of Math Object and implement in practice as well. Lik
 
 Date: Learn all concepts and methods of Date and implement as well. Make a small digital clock as well.
 
-String: Learn and implement concepts of String. Different method to initialise a string (new String, String)  using single quote, double quote and template literals.
+String: Learn and implement concepts of String. Different method to initialise a string (new String, String) using single quote, double quote and template literals.
 
 String Method: Learn and implement different methods of strings like, indexOf, lastIndexOf, replace,replaceAll,concat, sliced, substr,subString,toLower,toUpper,startsWith,endsWith etc.
-
 
 day-3 ->
 
 RegExp -> Learn different concepts and methods of RegExp and implement them in code as well. Like I practice match, search and test method. Implement repeat and repeatAll using RegExp.
 
-Array -> Learn deep and pratice concepts of array. Practice different methods of Arraylike map,filter, reduce, some,every,sort,splice and so on. Get to know about multi dimension array. 
-
+Array -> Learn deep and pratice concepts of array. Practice different methods of Arraylike map,filter, reduce, some,every,sort,splice and so on. Get to know about multi dimension array.
 
 Map: Learn Map object and implement its set,size and has method. Map is key-value pair object which maintain its order
 
 WeakMap: Key of WeakMap is always be object. I practice this in code.
 
-Set:  Learn and implement methods os Set. Set is like an array but not array. Set are collection of unique values.It also maintain the order of insertion. Also implement coversion of array to set and vice-versa.
+Set: Learn and implement methods os Set. Set is like an array but not array. Set are collection of unique values.It also maintain the order of insertion. Also implement coversion of array to set and vice-versa.
 
 Object: Learn and implement concepts of Objects. Like different ways of initialization of object, dot notation,brcket notation, prototype inheritence. Also practice getter and setter function.
 
@@ -76,9 +74,12 @@ Prototype inheritance: Learn concept of prototype inheritance and implement it i
 
 Promise: Learn and imlement Promise. I get to know how promise work and how to handler resolve and reject promise using then and catch respectively.Also implement then chaining and get to know how event loop works.
 
-
 day-4 -->>
 
-Iterator: Learn new concept Iterator. Got to know how iterator  works, why it is useful, what iterables are. Implement this in code as well.
+Iterator: Learn new concept Iterator. Got to know how iterator works, why it is useful, what iterables are. Implement this in code as well.
 
 Generator: Generator is another form of iterator. Implement generator functions. Got to know how generator works, how generator is different from normal function.
+
+Project -1 : Make a project using different concepts of javacript. In this project, user can add its name and can also deletet it. User can move his/her name in red box by clicking on 'Move to Red', in green box by clicking on 'Move to Green', in blue box by clicking on 'Move to Blue', in yellow box by clicking on 'Move to Yellow'.
+
+Add validation to HTML form: I add basic validation to html form using DOM manipulation in javascript.
