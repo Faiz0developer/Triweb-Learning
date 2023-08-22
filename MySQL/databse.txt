@@ -1,0 +1,36 @@
+CREATE DATABASE mysql_workshop_2021;
+
+use mysql_workshop_2021;
+
+CREATE TABLE students(
+id int(11) NOT null PRIMARY KEY,
+student_name varchar(255) NOT null,
+class int(11) DEFAULT 6,
+mobile_number varChar(100)
+);
+
+
+CREATE TABLE teacher(
+id int(11) NOT null PRIMARY KEY,
+teacher_name varchar(255) NOT null,
+mobile_number varChar(100)
+);
+
+
+CREATE TABLE classes(
+id int(11) NOT null AUTO_INCREMENT,
+class_name varchar(100) NOT null,
+teacher_id int(11) NOT null,
+PRIMARY KEY(id),
+FOREIGN KEY(teacher_id) REFERENCES teacher(id)
+);
+
+ALTER TABLE students CHANGE class class_id int(11) NOT null;
+
+ALTER TABLE students ADD FOREIGN KEY (class_id) REFERENCES classes(id)
+
+ALTER TABLE students
+ADD created_on timestamp DEFAULT CURRENT_TIMESTAMP;
+
+delete a table
+DROP TABLE teacher123

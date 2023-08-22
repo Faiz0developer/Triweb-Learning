@@ -1,0 +1,24 @@
+
+CRUD -->> CREAT, RETRIEVE, UPDATE, DELETE
+
+C-Create->
+INSERT INTO teacher(mobile_number,teacher_name) VALUES('1111','t1')
+INSERT INTO teacher(mobile_number,teacher_name) VALUES('2222','t2')
+INSERT INTO class(class_name,teacher_id) VALUES('class one',2)
+
+R-RETRIEVE->
+SELECT * FROM teacher
+
+U-UPDATE->
+UPDATE teacher SET mobile_number = '2222';
+UPDATE teacher SET mobile_number = '2222' WHERE id=2;
+UPDATE teacher SET mobile_number = '3333' WHERE id=3;
+UPDATE teacher SET techer_name = 't3' WHERE id=3;
+
+D-DELETE-> it can't reset AUTO_INCREMENT column
+DELETE FROM teacher
+
+
+TRUNCATE -> it reset the whole TABLE
+TRUNCATE TABLE teacher
+
