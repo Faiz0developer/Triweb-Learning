@@ -89,3 +89,5 @@ Add validation to HTML form: I add basic validation to html form using DOM manip
 Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
 
 I learn how to create database, table. Perform different actions in table like add a new column, change the column name, make the column primary and foreign key, drop a table and add timestamp to particular column.
+
+Learn how to make objects and how to join different tables together. Learn different SELECt query like OR,AND,IN and so on.

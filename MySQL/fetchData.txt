@@ -1,0 +1,64 @@
+#fetching data
+
+#SELECT all data
+SELECT * FROM `students`;  
+
+#SELECT with WHERE
+SELECT * FROM `students` WHERE id=1
+
+#SELECT with AND
+SELECT * FROM `students` WHERE class_id=2 AND mobile_number='2222';
+
+#SELECT with OR
+SELECT * FROM `students` WHERE class_id=2 OR class_id=1
+
+#IN query
+SELECT * FROM `students` WHERE class_id IN (1,2);
+
+#SELECT custome field
+SELECT student_name FROM `students` WHERE id=1;
+SELECT student_name,mobile_number FROM `students` WHERE id=1;
+
+
+#Change name of column while fetching the data
+SELECT student_name as NameOfStudent,mobile_number as MobileNumber FROM `students` WHERE id=1;
+
+#object
+SELECT st.* FROM students st WHERE id=1;
+
+
+#JOIN
+
+#INNER JOIN
+SELECT * 
+FROM students st 
+INNER JOIN classes cl ON st.class_id = cl.id;
+
+SELECT st.student_name,cl.class_name 
+FROM students st 
+INNER JOIN classes cl ON st.class_id=cl.id;
+
+
+SELECT st.student_name,cl.class_name 
+FROM students st
+INNER JOIN classes cl ON st.class_id=cl.id WHERE st.id=1;
+
+
+#JOIN three tables
+SELECT st.studen_name as NameOfStudent,cl.class_name, t.techer_name as ClassTeacher
+FROM `students` st 
+INNER JOIN classes cl ON st.class_id=cl.id
+INNER JOIN teacher t ON cl.teacher_id=t.id
+
+
+
+
+
+
+
+
+
+
+
+
+
