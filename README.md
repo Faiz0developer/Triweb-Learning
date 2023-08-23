@@ -1,46 +1,64 @@
                                                             # Triweb-Learning
                                                         3 months Internship program
 
-This is MERN stack internship.In this internship we learn and practice different technologies and put everything in folder of same name what we are practising. eg github in github folder,html in folder name html and so on.
+This is a MERN stack internship.In this internship I learn and practice different technologies and put everything in folder of same name what we are practising. eg github in github folder,html in folder name html and so on.
+
+---
 
 #1: Github ->
+
 Learn git and github.Learn all commands (most used) and apply those commands in task as well. Make a repo and do a initial commit.
 
-#2: 📂HTML ->
+---
 
-⭕I learn and practice different concepts of HTML.
+#2: HTML -> I learn and practice different concepts of HTML.
 
-📂form-> In this folder a create a file name form.html.
+       form-> In this folder a create a file name form.html. Create a registration form with different input fields.
 
-        🗃Form.html-> Create a registration form with different input fields.
+       time-table-> In this folder a create a file name timeTable.html. Create a my daily routine using table tag.
 
-📂time-table-> In this folder a create a file name timeTable.html.
+---
 
-        🗃timeTable.html-> Create a my daily routine using table tag.
+#3: CSS -> Explore css basics and learn deep concepts of CSS.
 
-#3: 📂CSS ->
+      form-> This folder contain my CSS file where I give style to Form that I have created.
 
-⭕Explore css basics and learn deep concepts of CSS.
+      time-table-> I apply CSS to my daily routine time-table in this folder.
 
-📂form-> This folder contain my CSS file where I give style to Form that I have created.
+---
 
-📂time-table-> I apply CSS to my daily routine time-table in this folder.
+#4: Javascript -> I learn and practice javascript from basic to some level of advance. Topics are present in diferent folders and files.
 
-#4: 📂Javascript
+day-1 -> I learn basics of JS. Topics are :-
 
-⭕I learn and practice javascript from basic to some level of advance. Topics are present in diferent folders and files.
+      event-> Make a image changer demo app and validate a user using events.
 
-📂day-1 -> I learn basics of JS. Topics are :-
+      function-> Learn about basics of functions and function hoisting.
 
-    📂event-> Make a image changer demo app and validate a user using events.
+      operator-> Learn basics of operators.
 
-    📂function-> Learn about basics of functions and function hoisting.
+      variable-> This folder contain variable hoisting, global hoisting and variable scope files. I Learn about these topics.
 
-    📂operator-> Learn basics of operators.
+day-2 -> In this folder the topics are :-
 
-    📂variable-> This folder contain variable hoisting, global hoisting and variable scope files. I Learn about these topics.
+    ✅ if-else statement (condition.js)
+    ✅ check control flow of if-else statement using diferent-different falsy values (control-flow.js)
+    ✅ data type conversion (dataType-conversion.js)
+    ✅ error handling using try and catch (exception-handling.js)
+    ✅ error handling using try, catch and final (exception-finally.js).
+    ✅ literals and access special keys of object (literals.js)
+    ✅ selecting a week day using switch statement (switch.js)
 
-📂day-2 ->
+day-3 ->
+
+    ✅ iterate the number till 10 using for, while and do-while loop (loop.js).
+    ✅ loop over an object using for-in loop (for-in-loop.js)
+    ✅ loop over an array using for-of loop (for-of-loop.js)
+    ✅ loop over an array using forEach method (forEach.js)
+    ✅ come out from a loop,inner loop,outer loop using break keyword(break.js)
+    ✅ skip a iteration in a loop, inner loop, outer loop using continue keyword (continue.js)
+    ✅ come out of both inner and outer at once using break with label and skip iteration of both inner and outer     loop using continue with label (label.js).
+
 
 Function parameter: Learn and implement this parameter concpet.In this module I learn and practice about normal parameters and then arguements keyword and then REST paramter. Learn about defalt parameter as well.
 
