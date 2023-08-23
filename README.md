@@ -162,3 +162,4 @@ workbench -> Implement queries on workbench ->
         ✅ make some arrow function with different uses (Arrow-function.js)
         ✅ pass default paramter to a fucntion (Default-paramter.js)
         ✅ handle many paramter by REST paramter in a function (rest-paramter.js)
+        ✅ Play with spread operator in array and object as well (Spread-param.js)
