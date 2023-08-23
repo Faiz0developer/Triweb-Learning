@@ -159,4 +159,4 @@ workbench -> Implement queries on workbench ->
 
         ✅ Try to reassign the variable declared using const (Constant.js).
         ✅ try to access const,let and var out of it scope (Scoping.js)
-
+        ✅ make some arrow function with different uses (Arrow-function.js)
