@@ -1,0 +1,67 @@
+#MySQL WHERE clause
+update classes set class_name = 'Class 5' where id = 1
+update students set mobile='2222' where id=12
+
+select * from students where class_id = 5;
+
+#OR
+select * from students where class_id = 4 or class_id = 5;
+
+#AND
+select * from students where mobile = '2222' and class_id=5
+
+#Get all the records of students of class 1,2,3,4,5 but not 6
+select * from students where class_id=1 or class_id=2 or class_id=3 or class_id=4 or class_id=5
+select * from students where class_id <> 6
+
+#MySQL ORDER BY Keyword
+select * from students where class_id <> 6 order by class_id
+select * from students where class_id <> 6 order by class_id asc
+select * from students where class_id <> 6 order by class_id desc
+
+#limit
+select * from students where class_id = 5 limit 2
+
+#max
+select max(salary) from teachers;
+
+#min
+select min(salary) from teachers;
+
+#second maximun
+select max(salary) from teachers where salary NOT in(select max(salary) from teachers;)
+
+#like
+select * from students where student_name <> 6 like 'A%l'
+
+#in
+select * from students where class_id in(1,5,6)
+
+
+#MySQL BETWEEN operators
+select * from teachers where salary between 5500 and 1100
+
+
+#join
+
+#left Join
+select cl.class_name,tr.teacher_name as class_teacher
+from classes cl
+left join teachers tr cl.teacher_id=tr.id
+
+#right Join
+select cl.class_name,tr.teacher_name as class_teacher
+from classes cl
+right join teachers tr cl.teacher_id=tr.id
+
+#inner join
+#inner Join
+select cl.class_name,tr.teacher_name as class_teacher
+from classes cl
+inner join teachers tr cl.teacher_id=tr.id
+
+#cross Join
+select cl.class_name,tr.teacher_name
+from classes cl
+cross join teachers tr
+
