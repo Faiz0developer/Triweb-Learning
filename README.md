@@ -154,3 +154,7 @@ workbench -> Implement queries on workbench ->
         ✅ Create database 'workshop2' and some tables and implement Crud operations in these tables SELECT and other queries like join,order by, group by.
 
 ---
+
+#6: ES6 -> Learn and implement concepts introduce in ES6 JS. All concepts of ES6 is putted here in this folder.
+
+        ✅ Try to reassign the variable declared using const (Constant.js).
