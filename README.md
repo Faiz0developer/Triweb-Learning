@@ -158,3 +158,5 @@ workbench -> Implement queries on workbench ->
 #6: ES6 -> Learn and implement concepts introduce in ES6 JS. All concepts of ES6 is putted here in this folder.
 
         ✅ Try to reassign the variable declared using const (Constant.js).
+        ✅ try to access const,let and var out of it scope (Scoping.js)
+
