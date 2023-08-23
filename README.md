@@ -1,38 +1,46 @@
-                                                                  # Triweb-Learning
-                                                              3 months Internship program
+                                                            # Triweb-Learning
+                                                        3 months Internship program
 
-#1: Github
-Learn git and github.Learn all commands (most used) and apply those commands in task as well. Make a repo and initial commit.
+This is MERN stack internship.In this internship we learn and practice different technologies and put everything in folder of same name what we are practising. eg github in github folder,html in folder name html and so on.
 
-#2: HTML
-Learn HTML basics and get deeper into it. I get the knowledge of different different elements. Created a registration form and a daily routine time table. I explore HTML elements and learn a lot from these tasks.
+#1: Github ->
+Learn git and github.Learn all commands (most used) and apply those commands in task as well. Make a repo and do a initial commit.
 
-#3: CSS
-Explore css basics and learn deep concepts of css. Style registration form and time table. Learn and explore a lot from this task.
+#2: 📂HTML ->
 
-#4:Javascript
+⭕I learn and practice different concepts of HTML.
 
-day-1 ->
+📂form-> In this folder a create a file name form.html.
 
-Introduction to Javacript: Learn why javascript is so important, famous and most used.
+        🗃Form.html-> Create a registration form with different input fields.
 
-operators and variables: Do some coding using var,let and const and understand difference among them.Learn differnt opertors.
+📂time-table-> In this folder a create a file name timeTable.html.
 
-hoisting: Learn concept of hoisting. How hositing works for function and function expression, as well for variables declared using ver, let and const.
+        🗃timeTable.html-> Create a my daily routine using table tag.
 
-event: Practice some events using addEventListener and made small demo project called image-changer.
+#3: 📂CSS ->
 
-data Type: Apply knowledge of data types and data type converion in coding.
+⭕Explore css basics and learn deep concepts of CSS.
 
-control flow and coniditon: Practice if-else, switch statement in coding.
+📂form-> This folder contain my CSS file where I give style to Form that I have created.
 
-error handling: Learn this concept and apply this in code. Get to know how to handle errors and we can build our custome error.
+📂time-table-> I apply CSS to my daily routine time-table in this folder.
 
-loops: Learn about loops and different type of loops (for, while, do-while) and implement them all in code. Get to know about nested loop and practice it well. Learn about break statements, continue statements and labels and practice them with loops. I get to know about how label actually works. Implement for-in, for-of loop in code. And got the idea about forEach method and practice it as well.
+#4: 📂Javascript
 
-function: Learn different concept of function and implement them all as well in code. Like I implement pass by value arguement and pass by reference arguement, scoping and hoisting of function, recursion function, different method of recursion, nested function and condition function.
+⭕I learn and practice javascript from basic to some level of advance. Topics are present in diferent folders and files.
 
-day-2 ->
+📂day-1 -> I learn basics of JS. Topics are :-
+
+    📂event-> Make a image changer demo app and validate a user using events.
+
+    📂function-> Learn about basics of functions and function hoisting.
+
+    📂operator-> Learn basics of operators.
+
+    📂variable-> This folder contain variable hoisting, global hoisting and variable scope files. I Learn about these topics.
+
+📂day-2 ->
 
 Function parameter: Learn and implement this parameter concpet.In this module I learn and practice about normal parameters and then arguements keyword and then REST paramter. Learn about defalt parameter as well.
 

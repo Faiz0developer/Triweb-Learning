@@ -1,0 +1,51 @@
+create database workshop2;
+
+use workshop2
+
+CREATE TABLE teachers(
+id int(11) NOT null PRIMARY KEY,
+teacher_name varchar(255) NOT null,
+mobile_number varChar(100)
+);
+
+CREATE TABLE classes(
+id int NOT null AUTO_INCREMENT,
+class_name varchar(100) NOT null,
+teacher_id int NOT null,
+PRIMARY KEY(id),
+FOREIGN KEY(teacher_id) REFERENCES teachers(id)
+);
+
+CREATE TABLE students(
+id int NOT null PRIMARY KEY,
+student_name varchar(255) NOT null,
+class_id int DEFAULT 6,
+mobile_number varChar(20) default 0,
+foreign key(class_id) references classes(id)
+);
+
+
+MySQL INSERT INTO statement
+insert into teachers(teacher_name,mobile_number,salary) values('Ajay','1234',5000)
+
+MySQL INSERT INTO statement - multiple records
+insert into teachers(id,teacher_name,mobile_number,salary)
+values(2,'Vijay','1235',5000),(3,'Faizan','1236',4000)
+
+insert into teachers values(4,'Aman','1237',7000)
+
+insert into classes (class_name, teacher_id) values('CLass 6', 1)
+
+insert into classes (class_name, teacher_id) values('CLass 6', 1),
+('CLass 7', 2),('CLass 5', 3),('CLass 10', 1)
+
+insert into classes (class_name, teacher_id) values('CLass 8', 2),('CLass 9', 4)
+
+MySQL WHERE clause
+
+UPDATE classes set class_name = 'class 5' WHERE id=1
+
+insert into students(id,student_name,mobile_number, class_id) 
+values(1,'Alex','9876', 5),(2,'Arya','9875', 5),(3,'Faiz','9874', 6),(4,'Alex','9879', 6),
+(5,'Umar','1111', 7),(6,'Shweta','2222', 7),(7,'Anjali','3333', 1),(8,'Amana','4444', 2),
+(9,'Haider','9999', 3),(10,'Nilesh','7777', 4),(11,'Aakriti','6666', 4)
