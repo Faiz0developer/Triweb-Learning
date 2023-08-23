@@ -27,7 +27,7 @@ Learn git and github.Learn all commands (most used) and apply those commands in 
 
 ---
 
-#4: Javascript -> I learn and practice javascript from basic to some level of advance. Topics are present in diferent folders and files.
+#4: Javascript -> I learn and practice javascript from basic to some level of advance. I have put topicsin different-different folders like day-1, day-2 and so on.
 
 day-1 -> I learn basics of JS. Topics are :-
 
@@ -49,7 +49,7 @@ day-2 -> In this folder the topics are :-
     ✅ literals and access special keys of object (literals.js)
     ✅ selecting a week day using switch statement (switch.js)
 
-day-3 ->
+day-3 -> Topics related to loops -:
 
     ✅ iterate the number till 10 using for, while and do-while loop (loop.js).
     ✅ loop over an object using for-in loop (for-in-loop.js)
@@ -59,61 +59,98 @@ day-3 ->
     ✅ skip a iteration in a loop, inner loop, outer loop using continue keyword (continue.js)
     ✅ come out of both inner and outer at once using break with label and skip iteration of both inner and outer     loop using continue with label (label.js).
 
+day-4 -> Functions related topics -:
 
-Function parameter: Learn and implement this parameter concpet.In this module I learn and practice about normal parameters and then arguements keyword and then REST paramter. Learn about defalt parameter as well.
+    ✅ Make a adTwoNumber function and pass value in arguement to clear pass by value and reference (function.js).
+    ✅ make a square function using function expression (function-expression.js).
+    ✅ function getNumResult add or subtract two numbers according to condition (conditional.js).
+    ✅ hoisting of function (hoist-function.js).
+    ✅ take two numbers from user and add both number using function (user-input.js).
+    ✅ make and call a function inside of another funtiion (nested-function.js).
+    ✅ loop over number using Recursion function with different-different methods of recursion (recursion-function.js)
 
-closure: Learn deep about closure. How closure works, what actually closure is, I get these all knowledge and practice it as well.
+day-5 -> some advance concepts of functions(closure,arrow function) -:
 
-arrow function: Practice arrow function and get to know advantage of arrow function.
+    ✅ Make a multiplier function. Inner function 'multiply' have access of outer function 'getProductFunction' variable due to closure (closure.js)
+    ✅ make a getSquare function using arrow function (arrow.js).
+    ✅ pass two number to paramter of addTwoNUmber function,which add two numbers (function-parameter.js).
+    ✅ aguement of multiply function have default value, which multply two numbers (default.js).
+    ✅ deep nesting of functions (nested-in-depth.js).
+    ✅ use 'eval' function to evaluate string (predefined-function.js).
 
-Operators: Assignment, arithmetic, relational i.e. in, instance of, logical, bitwise, conditional, comma.
-Array destructuring: Learn and practice Array destructing.
-Types of expressions and their use: Arithmetic, string, logical, primary(this), left hand side(new, super). Learn all these operators and expression.
+day-6 -> topics related to operators and destructing -:
 
-Number data type: Learn and implement different concepts and methods of Number data type. Like I learn octal,decimal.binary number, exponential number, conversion of a number to exponential number.
+    ✅ use different operators like arithmetic, relational etc (expression-operatos.js).
+    ✅ compare different numeric values using comparison operator (comparison-operator.js).
+    ✅ evaluate expression logically using logical operator (logical-operator.js)
+    ✅ checking a property of object, whether it is the property of that object or notusing in operator (relational-object.js).
+    ✅ Using of ternary operators (ternary-operator.js)
+    ✅ use this in a function and make different object to get the knowledge of this operator (this.js).
+    ✅ print the elements of an array using destructing (destructing.js).
 
-Number object methods: Learnand implement methods of Number object like, parseInt, parseFloat, toExponential, toFixed etc.
+day-7 -> number, date related topics -:
 
-Math Object: Get knowledge of Math Object and implement in practice as well. Like random, floor, round,max,min,ceil etc.
+    ✅ Try decimal number,octal,hexadecimal,binary (number.js).
+    ✅ Different method of number object like isNaN, parseInt etc. (numberObject-method.js).
+    ✅ genrate random number using random method, round the digit and so on (math-object.js).
+    ✅ create a time using Date and its method (date.js).
+    ✅ create a digital clock using date (digital-clock.js)
 
-Date: Learn all concepts and methods of Date and implement as well. Make a small digital clock as well.
+day-8 -> string related topics -:
 
-String: Learn and implement concepts of String. Different method to initialise a string (new String, String) using single quote, double quote and template literals.
+    ✅ make and format a string using '',"" and `` (text-formating.js).
+    ✅ create string with String object (string-object.js).
+    ✅ use different method of string (method folder).
+    ✅  create escape sequence using hexadecimal,and unicode sequence (escape-sequence.js).
 
-String Method: Learn and implement different methods of strings like, indexOf, lastIndexOf, replace,replaceAll,concat, sliced, substr,subString,toLower,toUpper,startsWith,endsWith etc.
+day-9 -> Array related topics -:
 
-day-3 ->
+    ✅ Create arrays using different diferent methods (array.js).
+    ✅ methods of array (methods-of-array folder)
+    ✅ create a multi-dimension array (multi-dimension-array.js).
 
-RegExp -> Learn different concepts and methods of RegExp and implement them in code as well. Like I practice match, search and test method. Implement repeat and repeatAll using RegExp.
+day-10 -> Object and prototypr related topics -:
 
-Array -> Learn deep and pratice concepts of array. Practice different methods of Arraylike map,filter, reduce, some,every,sort,splice and so on. Get to know about multi dimension array.
+    ✅ Create a Map object using Map (Map.js).
+    ✅ Create a weakMap object using WeakMap (WeakMap.js).
+    ✅ Create a Set object using Map (Set.js).
+    ✅ Convert an array to Set and vice-versa (conversion-of-array.js).
+    ✅ Create objects using {}, Object.create and constructor function (object.js and initializaion-of-object.js).
+    ✅ create methods in object (method-inobject.js).
+    ✅ enumerate an object for-in loop (Object-enumerate.js).
+    ✅ getter and setter function (getter-setter.js).
+    ✅ access parent of objects using __proto__ and prototype (prototyp__proto__.js and prototype.js)
 
-Map: Learn Map object and implement its set,size and has method. Map is key-value pair object which maintain its order
+day-11 -> Promise related topics -:
 
-WeakMap: Key of WeakMap is always be object. I practice this in code.
+    ✅ return a promise and then resolve the promise (promise.js)
+    ✅ handel promise using chaining of more than one 'then' (promise-chaining.js).
+    ✅ apply condition for Validate user using callback (callback.js)
+    ✅ then do not execute in frst event loop (eventLoop.js).
 
-Set: Learn and implement methods os Set. Set is like an array but not array. Set are collection of unique values.It also maintain the order of insertion. Also implement coversion of array to set and vice-versa.
+day-12 => iterators,generator,rest-spread operator -:
 
-Object: Learn and implement concepts of Objects. Like different ways of initialization of object, dot notation,brcket notation, prototype inheritence. Also practice getter and setter function.
+    ✅ open an array using spread and gather elemnents in array using rest (resy-spread-operator.js).
+    ✅ create an iterator funcion (iterator.js).
+    ✅ create an generator funcion (generator.js).
+    ✅ put validation on registration form created earlier(html-form-validation).
 
-Prototype inheritance: Learn concept of prototype inheritance and implement it in code.
+---
 
-Promise: Learn and imlement Promise. I get to know how promise work and how to handler resolve and reject promise using then and catch respectively.Also implement then chaining and get to know how event loop works.
+#6 Project -> Make a some projects.
 
-day-4 -->>
+1. BasicJsProject -: I created a basic project on javascriptin which user can put his/her name and can move his/her name in squares(red,green,blue and yellow).By clicking on 'move-to-red' button name will be move to red square and by clicking on 'move-to-green' button name will move to green square.
 
-Iterator: Learn new concept Iterator. Got to know how iterator works, why it is useful, what iterables are. Implement this in code as well.
+---
 
-Generator: Generator is another form of iterator. Implement generator functions. Got to know how generator works, how generator is different from normal function.
+#5: MySQL -> Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
 
-Project -1 : Make a project using different concepts of javacript. In this project, user can add its name and can also deletet it. User can move his/her name in red box by clicking on 'Move to Red', in green box by clicking on 'Move to Green', in blue box by clicking on 'Move to Blue', in yellow box by clicking on 'Move to Yellow'.
+phpMyAdmin -> Work on phpMyAdmin ->
 
-Add validation to HTML form: I add basic validation to html form using DOM manipulation in javascript.
+        ✅ Create database 'mysql_workshop-2021' and some table. Implement Crud operations in these tables and SELECT and other queries.
 
-#5: MySQL
+workbench -> Implement queries on workbench ->
 
-Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
+        ✅ Create database 'workshop2' and some tables and implement Crud operations in these tables SELECT and other queries like join,order by, group by.
 
-I learn how to create database, table. Perform different actions in table like add a new column, change the column name, make the column primary and foreign key, drop a table and add timestamp to particular column.
-
-Learn how to make objects and how to join different tables together. Learn different SELECt query like OR,AND,IN and so on.
+---
