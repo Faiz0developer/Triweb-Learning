@@ -163,3 +163,4 @@ workbench -> Implement queries on workbench ->
         ✅ pass default paramter to a fucntion (Default-paramter.js)
         ✅ handle many paramter by REST paramter in a function (rest-paramter.js)
         ✅ Play with spread operator in array and object as well (Spread-param.js)
+        ✅ Handle new things using Template literals like custom interpolation through template literals (Template-literals.js)
