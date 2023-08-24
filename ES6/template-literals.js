@@ -28,6 +28,6 @@ something`Student's name is ${s1Name} and age is ${s1Age}`;
 // Raw string templte literal
 
 let str = `age is \n ${40}`;
-
-console.log(str == "age is \n ${40}");
-console.log(String.raw`age is \n ${40}` == "age is \\n ${40}");
+console.log(str == "age is \n 40"); //true
+console.log(str == "age is \\n 40"); //false
+console.log(String.raw`age is \n ${40}` == "age is \\n 40"); //true
