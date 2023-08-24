@@ -164,3 +164,4 @@ workbench -> Implement queries on workbench ->
         ✅ handle many paramter by REST paramter in a function (rest-paramter.js)
         ✅ Play with spread operator in array and object as well (Spread-param.js)
         ✅ Handle new things using Template literals like custom interpolation through template literals (Template-literals.js)
+        ✅ I implement practically more features of ES6 and save in ES6 folder here in different files, name is given according to topics.
