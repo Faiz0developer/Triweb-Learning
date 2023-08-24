@@ -165,3 +165,9 @@ workbench -> Implement queries on workbench ->
         ✅ Play with spread operator in array and object as well (Spread-param.js)
         ✅ Handle new things using Template literals like custom interpolation through template literals (Template-literals.js)
         ✅ I implement practically more features of ES6 and save in ES6 folder here in different files, name is given according to topics.
+
+---
+
+#7: NodeJS -> I put everything in this folder that I learn and implement concepts of NodeJS.
+
+        ✅ get-post-express folder: I Create app using express package. Run it into port localhost:3000 using listen method. Use get and post method for pages. I create a small calculator basically. I put everything in get-post-express folder.
