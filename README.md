@@ -165,3 +165,4 @@ workbench -> Implement queries on workbench ->
 #7: NodeJS -> I put everything in this folder that I learn and implement concepts of NodeJS.
 
     ● get-post-express folder: I Create app using express package. Run it into port localhost:3000 using listen method. Use get and post method for pages. I create a small calculator basically using controllers and routers. I put everything in get-post-express folder.
+    ● CRUD: In this folder I created a backend app and server through which user can send,get,update and delete his/her data from database. I use MVC(model, view controller) architecture where I connect model with database.
