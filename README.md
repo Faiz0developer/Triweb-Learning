@@ -166,3 +166,4 @@ workbench -> Implement queries on workbench ->
 
     ● get-post-express folder: I Create app using express package. Run it into port localhost:3000 using listen method. Use get and post method for pages. I create a small calculator basically using controllers and routers. I put everything in get-post-express folder.
     ● CRUD: In this folder I created a backend app and server through which user can send,get,update and delete his/her data from database. I use MVC(model, view controller) architecture where I connect model with database.
+    ● Sequelize: You will get here some files which together makes a server to send user data to databse, delete user data from datebase, update databse data and get user data from database (model->user.js). To connect database with server I use sequelize (database.js) here.
