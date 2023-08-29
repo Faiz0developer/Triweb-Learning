@@ -1,0 +1,35 @@
+// CRUD operation using MongoDB
+
+// Create databse
+"mongodb+srv://mycluster.zsttz8l.mongodb.net/jsdb" --apiVersion 1 --username faizansiddiqui
+
+// INSERT Query
+//1: insert single Data
+db.myfirstcollection.insertOne({name:"Sudheer",mobile:1111})
+
+//2: insert many data
+db.myfirstcollection.insertMany([{name:"Firdous",email:"abc@gmail.com"},{name:"Faizan", mobile:2222, location:"India"}])
+
+
+// SELECT Query
+
+//find all data
+db.myfirstcollection.find()
+
+//find particular data using condition
+db.myfirstcollection.find({name:"Faizan"})
+
+
+//Update Query
+//update single data
+ db.myfirstcollection.updateOne({name:"Faizan"}, {$set:{mobile:4444}})
+
+ //update many data
+ db.myfirstcollection.updateOne({name:"Faizan"}, {$set:{mobile:4444}})
+
+// DELETE Query
+//delete single data
+ db.myfirstcollection.deleteOne({name:"Faizan"})  //delete first element match the condition
+
+// delete many data -->>
+ db.myfirstcollection.deleteMany([{name:"Faizan"}])  // delete all element having name Faizan
