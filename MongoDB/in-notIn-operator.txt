@@ -1,0 +1,9 @@
+ db.books.find({price:600})
+
+ db.books.find({price:400})
+
+// in operator
+  db.books.find({price:{$in:[400,600]}})
+
+// not in operator
+ db.books.find({price:{$nin:[400,600]}})
