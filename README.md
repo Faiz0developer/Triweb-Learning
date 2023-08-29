@@ -171,3 +171,6 @@ workbench -> Implement queries on workbench ->
     ● loop.js: Print even and odd number from an array using loop.
     ● breaked or completed loop.js: I checked whether loop is iterated completely  or been break in between.
     ● continue-track.js: In this file I check how many time continue statement is called in a loop
+    ● series : Print different series and pattern using loop.
+    ● table.js: Contain code for printing table of any number.
+    ● recursion.js: This folder contain recursion function.
