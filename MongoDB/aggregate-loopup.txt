@@ -1,0 +1,30 @@
+//INSERT
+db.customer.insertOne({cName:"Sarfraz"})
+
+
+//SELECT
+db.customer.find()
+
+//INSERT many
+db.books.insertMany([{bName:"abc",price:400},{bName:"You Can Win",price:500},{bName:"letusC",price:600}])
+
+//SELECT
+db.customer.find({_id: ObjectId("64edbc978d5a7f8386dd17e6")})
+
+//Update
+db.customer.updateOne({_id: ObjectId("64edbc978d5a7f8386dd17e6")},{$set:{favBooks:[ObjectId("64edbd3e8d5a7f8386dd17e7"),ObjectId("64edbd3e8d5a7f8386dd17e8")]}})
+
+//SELECT
+db.customer.find({_id: ObjectId("64edbc978d5a7f8386dd17e6")})
+
+
+/INSERT One
+db.customer.insertOne({cName:"Faizan",favBooks:[ObjectId("64edbd3e8d5a7f8386dd17e9")]})
+
+
+//SELECT
+db.customer.find()
+
+
+//aggregate and loopup
+db.customer.aggregate([{$lookup: {from:"books",localField: "favBooks",foreignField: "_id",as:"FavouriteBookData"}}])
