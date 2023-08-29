@@ -1,0 +1,99 @@
+
+// Validation
+db.createCollection('prodcuts',{validator:{
+    $jsonSchema:{
+        bsonType:'object',
+        required:['title','pName','owner','comments'],
+        properties:{
+            title:{
+                bsonType:'string',
+                description:'Title must be string'
+            },
+            pName:{
+                bsonType:'string',
+                description:'pName must be string'
+            },
+            owner:{
+                bsonType:'objectId',
+                description:'Id o customer'
+            },
+            comments:{
+                bsonType:'string',
+                description:'comments must be string'
+            }
+        }
+        }
+    }
+})
+
+
+ db.products.insertOne({
+    title:"my product 1",
+    pName:"product002",
+    owner:'1233'
+ })
+
+
+ db.products.insertOne({
+    title:"my product 1",
+    pName:"product002",
+    owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+    comments:"Hi hell"})
+
+ db.products.insertMany([
+    {
+        title:"my product 4",
+        pName:"product004",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        title:"my product 5",
+        pName:"product005",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        title:"my product 6",
+        pName:"product006",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"
+    }
+])
+
+
+// validation failed 
+ db.products.insertMany([
+    {
+        title:"my product 7",
+        pName:"product007",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        pName:"product008",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        title:"my product 9",
+        pName:"product009",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"
+    }
+])
+
+
+db.products.insertMany([
+    {
+        title:"my product 10",
+        pName:"product0010",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        pName:"product0011",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"},
+    {
+        title:"my product 12",
+        pName:"product0012",
+        owner:ObjectId("64edbc978d5a7f8386dd17e6"),
+        comments:"Hi hell"
+    }
+], {ordered:false})
