@@ -1,11 +1,12 @@
 {
-  "name": "User_Registration",
+  "name": "User-Service",
   "version": "1.0.0",
   "main": "app.js",
   "author": "Faizan Siddiqui",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

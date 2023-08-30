@@ -1,16 +1,12 @@
 const express = require("express");
+const userRoute = require("../project-1/routers/user");
 
 const app = express();
-
-app.get("/hello", (req, res) => {
-  res.send("Hello");
-});
 
 app.get("/", (req, res) => {
   res.send("Hi I'm root of server");
 });
 
-app.post("/post", (req, res) => {
-  res.send("Hi I'm post method");
-});
-app.listen(3000);
+app.use("/user", userRoute);
+
+app.listen(process.env.PORT);
