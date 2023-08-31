@@ -183,3 +183,9 @@ workbench -> Implement queries on workbench ->
     ● aggregate-lookup.txt: Look into data using AGGREGATE with LOOKUP query.
     ● validation.txt: Validate insertion data using validation functionality of mongoDB.
     ● in-notIn-operator.txt: Apply condition using in and not-in operator to select data.
+
+---
+
+#9: TypeScript: Implement typescript in nodejs. You can see it in this folder.
+
+    ● Project-1: In this folder I implement typescript to build a server and practice types of typescript like interface, union, types alias, class and so on.
