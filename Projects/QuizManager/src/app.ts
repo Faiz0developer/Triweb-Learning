@@ -1,9 +1,18 @@
 import express from "express";
+import { Response, Request, NextFunction } from "express";
 import mongoose from "mongoose";
+
 import userRouter from "./routers/user";
 import authRouter from "./routers/auth";
+import CustomError from "./helper/error";
 
 const app = express();
+
+interface ReturnResponse {
+  status: "error" | "success";
+  message: string;
+  data: {} | [];
+}
 
 const connectionString = process.env.CONNECTION_STRING || "";
 
@@ -24,6 +33,26 @@ app.get("/", (req, res) => {
 app.use("/user", userRouter);
 
 app.use("/auth", authRouter);
+
+app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
+  let message: string;
+  let statusCode: number;
+  let data;
+
+  if (!!err.statusCode && err.statusCode < 500) {
+    message = err.message;
+    statusCode = err.statusCode;
+  } else {
+    message = "Something went wrong please try after sometime!";
+    statusCode = 500;
+  }
+  let resp: ReturnResponse = { status: "error", message, data: {} };
+  if (!!err.data) {
+    resp.data = err.data;
+  }
+  console.log(err.statusCode, err.message);
+  res.status(statusCode).send(resp);
+});
 
 const connect = mongoose.connect(connectionString, {
   useNewUrlParser: true,

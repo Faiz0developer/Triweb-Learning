@@ -1,33 +1,44 @@
 import { Response, Request, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
+import CustomError from "../helper/error";
+
 const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
-  //header -->> get token
-  const authHeader = req.get("Authorization");
-
-  if (!authHeader) {
-    throw new Error("Not authenticated");
-    // res.status(401).send('Not authenticated')
-  }
-
-  //get token
-  const token = authHeader.split(" ")[1];
-
-  ///jwt -->> decode token using sign
-  let decodedToken: { userId: String; iat: Number; exp: Number };
   try {
-    decodedToken = <any>jwt.verify(token, "keepsecretmythissecretkey");
+    //header -->> get token
+    const authHeader = req.get("Authorization");
+
+    if (!authHeader) {
+      const err = new CustomError("Not authenticated");
+      err.statusCode = 401;
+      throw err;
+    }
+
+    //get token
+    const token = authHeader.split(" ")[1];
+
+    ///jwt -->> decode token using sign
+    let decodedToken: { userId: String; iat: Number; exp: Number };
+    try {
+      decodedToken = <any>jwt.verify(token, "keepsecretmythissecretkey");
+    } catch (error) {
+      const err = new CustomError("Not authenticated");
+      err.statusCode = 401;
+      throw err;
+    }
+
+    if (!decodedToken) {
+      const err = new CustomError("Not authenticated");
+      err.statusCode = 401;
+      throw err;
+    }
+
+    //get userId from decoded token
+    req.userId = decodedToken.userId;
+    next();
   } catch (error) {
-    throw new Error("Not authenticated");
+    next(error);
   }
-
-  if (!decodedToken) {
-    throw new Error("Not authenticated");
-  }
-
-  //get userId from decoded token
-  req.userId = decodedToken.userId;
-  next();
 };
 
 export { isAuthenticated };

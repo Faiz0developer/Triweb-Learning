@@ -1,15 +1,21 @@
 import { Response, Request, NextFunction } from "express";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+
 import User from "../models/user";
+import CustomError from "../helper/error";
 
 interface ReturnResponse {
   status: "error" | "success";
   message: string;
-  data: {};
+  data: {} | [];
 }
 
-const registerUser = async (req: Request, res: Response) => {
+const registerUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   let resp: ReturnResponse;
   try {
     const email = req.body.email;
@@ -29,12 +35,11 @@ const registerUser = async (req: Request, res: Response) => {
       res.send(resp);
     }
   } catch (err) {
-    resp = { status: "error", message: "Something went Wrong", data: {} };
-    res.status(500).send(resp);
+    next(err);
   }
 };
 
-const loginUser = async (req: Request, res: Response) => {
+const loginUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
     const email = req.body.email;
@@ -44,8 +49,9 @@ const loginUser = async (req: Request, res: Response) => {
     const user = await User.findOne({ email });
 
     if (!user) {
-      resp = { status: "error", message: "No user exist", data: {} };
-      res.status(401).send(resp);
+      const err = new CustomError("No user exist");
+      err.statusCode = 401;
+      throw err;
     } else {
       // verify user using bcrypt
       const status = await bcrypt.compare(password, user.password);
@@ -62,13 +68,13 @@ const loginUser = async (req: Request, res: Response) => {
         };
         res.send(resp);
       } else {
-        resp = { status: "error", message: "credentials mismatch", data: {} };
-        res.status(401).send(resp);
+        const err = new CustomError("credentials mismatch");
+        err.statusCode = 401;
+        throw err;
       }
     }
   } catch (err) {
-    resp = { status: "error", message: "Something went wrong", data: {} };
-    res.status(500).send(resp);
+    next(err);
   }
 };
 
