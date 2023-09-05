@@ -6,7 +6,7 @@ import CustomError from "../helper/error";
 interface ReturnResponse {
   status: "error" | "success";
   message: string;
-  data: {};
+  data: {} | [];
 }
 
 // get-->> get user data
