@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 
 import userRouter from "./routers/user";
 import authRouter from "./routers/auth";
+import quizRouter from "./routers/quiz";
 import CustomError from "./helper/error";
 
 const app = express();
@@ -33,6 +34,8 @@ app.get("/", (req, res) => {
 app.use("/user", userRouter);
 
 app.use("/auth", authRouter);
+
+app.use("/quiz", quizRouter);
 
 app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
   let message: string;
