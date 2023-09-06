@@ -135,6 +135,8 @@ day-12 => iterators,generator,rest-spread operator -:
 
 1. BasicJsProject -: I created a basic project on javascriptin which user can put his/her name and can move his/her name in squares(red,green,blue and yellow).By clicking on 'move-to-red' button name will be move to red square and by clicking on 'move-to-green' button name will move to green square.
 
+2. QuizManager -: Created REST APIs for a quiz app using node with typescript and mongoDB.In this folder you will get different different APIs like for register user,login user, create quiz,get quiz, publish quiz , report API and so on.
+
 ---
 
 #5: MySQL -> Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
@@ -189,3 +191,5 @@ workbench -> Implement queries on workbench ->
 #9: TypeScript: Implement typescript in nodejs. You can see it in this folder.
 
     ● Project-1: In this folder I implement typescript to build a server and practice types of typescript like interface, union, types alias, class and so on.
+
+---

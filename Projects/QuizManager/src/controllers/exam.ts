@@ -54,6 +54,7 @@ const submitExam = async (req: Request, res: Response, next: NextFunction) => {
     const answers = quiz.answers;
 
     const userId = req.userId;
+    console.log(userId);
 
     const allQuestions = Object.keys(answers);
     const total = allQuestions.length;
@@ -70,12 +71,11 @@ const submitExam = async (req: Request, res: Response, next: NextFunction) => {
       }
     }
     const result = new Report({ userId, quizId, score, total });
-
-    const examResult = await result.save();
+    const data = await result.save();
     let resp: ReturnResponse = {
       status: "success",
       message: "Quiz Submitted",
-      data: { total, score, resultId: examResult._id },
+      data,
     };
     res.status(200).send(resp);
   } catch (error) {

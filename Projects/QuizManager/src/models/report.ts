@@ -4,14 +4,14 @@ const schema = mongoose.Schema;
 
 const reportSchema = new Schema(
   {
-    userID: {
+    userId: {
       type: mongoose.Types.ObjectId,
-      requireD: true,
+      required: true,
     },
 
     quizId: {
       type: mongoose.Types.ObjectId,
-      requireD: true,
+      required: true,
     },
     score: {
       type: Number,

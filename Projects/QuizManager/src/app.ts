@@ -6,6 +6,7 @@ import userRouter from "./routers/user";
 import authRouter from "./routers/auth";
 import quizRouter from "./routers/quiz";
 import examRouter from "./routers/exam";
+import reportRouter from "./routers/report";
 
 import CustomError from "./helper/error";
 
@@ -40,6 +41,8 @@ app.use("/auth", authRouter);
 app.use("/quiz", quizRouter);
 
 app.use("/exam", examRouter);
+
+app.use("/report", reportRouter);
 
 app.use((err: CustomError, req: Request, res: Response, next: NextFunction) => {
   let message: string;
