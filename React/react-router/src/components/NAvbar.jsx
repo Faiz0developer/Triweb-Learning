@@ -20,6 +20,11 @@ const NAvbar = () => {
             Contact
           </Link>
         </li>
+        <li>
+          <Link to="/products" className={Navstyles.link}>
+            Products
+          </Link>
+        </li>
       </ul>
     </nav>
   );
