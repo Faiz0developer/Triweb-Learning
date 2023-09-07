@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+.modal {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  background-color: bisque;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.modal p {
+  font-size: 30px;
+}
