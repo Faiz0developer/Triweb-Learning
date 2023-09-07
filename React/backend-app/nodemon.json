@@ -1,0 +1,5 @@
+{
+  "env": {
+    "connectionString": "mongodb+srv://faizansiddiqui:Bismillah@mycluster.zsttz8l.mongodb.net/product?retryWrites=true&w=majority"
+  }
+}
