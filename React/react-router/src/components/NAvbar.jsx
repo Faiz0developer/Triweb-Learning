@@ -25,6 +25,11 @@ const NAvbar = () => {
             Products
           </Link>
         </li>
+        <li>
+          <Link to="/products/add" className={Navstyles.link}>
+            Add Products
+          </Link>
+        </li>
       </ul>
     </nav>
   );
