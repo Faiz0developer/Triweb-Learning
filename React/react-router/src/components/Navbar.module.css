@@ -1,0 +1,16 @@
+.nav {
+  background-color: antiquewhite;
+  padding: 20px 0px;
+}
+.ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.link {
+  color: brown;
+  text-decoration: none;
+}
