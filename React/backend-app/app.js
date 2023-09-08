@@ -16,13 +16,20 @@ app.get("/", (req, res) => {
 app.post("/products", async (req, res) => {
   try {
     const result = await ProductModel.create(req.body)
-  console.log(result);
-  res.send(result);
+    res.send({status:"success"});
   } catch (error) {
-    console.log(error.message)
     res.send({status:'error',message:error.message})
   }
 });
+
+app.get('/products', async(req,res)=>{
+  try {
+    const products = await ProductModel.find({})
+    res.send({status:"success", data:products})
+  } catch (error) {
+    res.send({status:'error',message:error.message})
+  }
+})
 
 mongoose.connect(process.env.connectionString).then(() => {
   app.listen(3004);

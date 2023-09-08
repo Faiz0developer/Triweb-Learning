@@ -10,10 +10,10 @@ const ProductItem = ({ product }) => {
           marginTop: "10px",
         }}
       >
-        <h1>{product.productName}</h1>
-        <img src={product.image} alt={product.productName} width="380px" />
-        <p>{product.description}</p>
-        <h4>price: ${product.price}</h4>
+        <h1>{product.product_name}</h1>
+        <img src={product.product_image} alt={product.product_name} width="380px" />
+        <p>{product.product_description}</p>
+        <h4>price: <i>${product.product_price}</i></h4>
         <button
           style={{
             padding: "10px 20px",

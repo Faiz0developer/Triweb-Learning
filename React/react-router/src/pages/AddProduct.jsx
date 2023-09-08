@@ -1,16 +1,21 @@
 import AddProductForm from "../components/AddProductForm";
+import { useNavigate } from "react-router-dom"
+
+
 
 const AddProduct = () => {
-  const getProductData = (productData) => {
+  const navigate = useNavigate()
+
+  const sendProductData = (productData) => {
     fetch("http://localhost:3004/products", {
       method: "POST",
       body: JSON.stringify(productData),
       headers: {
         "Content-Type": "application/json",
       },
-    }).then(response => response.json()).then(data => console.log(data))
+    }).then(() => navigate('/',{replace:true})).catch(err => console.log(err))
   };
-  return <AddProductForm onGetData={getProductData} />;
+  return <AddProductForm onGetData={sendProductData} />;
 };
 
 export default AddProduct;
