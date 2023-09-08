@@ -9,6 +9,7 @@ const ProductList = ({ product }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        gap:"50px",
       }}
     >
       {product.map((product) => {

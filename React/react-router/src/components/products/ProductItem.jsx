@@ -1,19 +1,25 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
+import FavoutiteContext from "../../../store/ContextFavourite";
+import "./ProductItem.css";
+import ProductLayout from "./ProductLayout";
+import CustomWrapper from "../../UI/CustomWrapper";
+
 const ProductItem = ({ product }) => {
+  const favouriteContext = useContext(FavoutiteContext);
+  const isFavourite = favouriteContext.isFavouriteItem(product._id);
+
+  const toggleFavourite = () => {
+    if (isFavourite) {
+      favouriteContext.removeFavouriteItem(product._id);
+    } else {
+      favouriteContext.addFavouriteItem(product);
+    }
+  };
   return (
-    <>
-      <li
-        style={{
-          backgroundColor: "darkgrey",
-          width: "600px",
-          padding: "20px",
-          marginTop: "10px",
-        }}
-      >
-        <h1>{product.product_name}</h1>
-        <img src={product.product_image} alt={product.product_name} width="380px" />
-        <p>{product.product_description}</p>
-        <h4>price: <i>${product.product_price}</i></h4>
+    <CustomWrapper>
+      <ProductLayout product={product} />
+      <div className="btn2">
         <button
           style={{
             padding: "10px 20px",
@@ -24,8 +30,12 @@ const ProductItem = ({ product }) => {
         >
           Buy
         </button>
-      </li>
-    </>
+        <button
+          className={`heart ${isFavourite ? "fvrt" : "unFvrt"}`}
+          onClick={toggleFavourite}
+        ></button>
+      </div>
+    </CustomWrapper>
   );
 };
 

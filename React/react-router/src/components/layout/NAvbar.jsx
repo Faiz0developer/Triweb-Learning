@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
-import Navstyles from "../components/Navbar.module.css";
+import Navstyles from "./Navbar.module.css";
+import FavoutiteContext from "../../../store/ContextFavourite";
+import { useContext } from "react";
 
 const NAvbar = () => {
+  const { favouriteItems } = useContext(FavoutiteContext);
+  const numberOfFavouriteItem = favouriteItems.length;
+
   return (
     <nav className={Navstyles.nav}>
       <ul className={Navstyles.ul}>
@@ -28,6 +33,11 @@ const NAvbar = () => {
         <li>
           <Link to="/products/add" className={Navstyles.link}>
             Add Products
+          </Link>
+        </li>
+        <li className={Navstyles.fvrtCount}>
+          <Link to="/products/favourite" className={Navstyles.link}>
+            {numberOfFavouriteItem}
           </Link>
         </li>
       </ul>

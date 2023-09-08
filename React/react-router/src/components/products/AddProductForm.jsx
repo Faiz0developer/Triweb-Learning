@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useRef } from "react";
-import Styles from "../components/AddProdcutForm.module.css";
-import CustomWrapper from "./CustomWrapper";
+import Styles from "./AddProdcutForm.module.css";
+import CustomWrapper from "../../UI/CustomWrapper";
 
 const AddProductForm = ({ onGetData }) => {
   const productName_ref = useRef();
