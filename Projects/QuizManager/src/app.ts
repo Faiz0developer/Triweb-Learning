@@ -1,6 +1,7 @@
 import express from "express";
 import { Response, Request, NextFunction } from "express";
 import mongoose from "mongoose";
+import cors from 'cors'
 
 import userRouter from "./routers/user";
 import authRouter from "./routers/auth";
@@ -21,6 +22,8 @@ interface ReturnResponse {
 const connectionString = process.env.CONNECTION_STRING || "";
 
 app.use(express.json());
+
+app.use(cors());
 
 declare global {
   namespace Express {
