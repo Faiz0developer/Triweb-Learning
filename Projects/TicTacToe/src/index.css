@@ -1,9 +1,36 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 .board-row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 1fr 1fr 1fr;
-  width: 120px;
-  /* clear: both;
-  content: '';
-  display: table; */
+  width: 180px;
+}
+.winner-winner{
+  color: green;
+}
+
+.square_gameOn{
+  background-color: #fff;
+  border: 1px solid #999;
+}
+.square_winner{
+  background-color: green;
+  border: 1px solid #999;
+  color: wheat;
+}
+.reset-btn{
+  padding: 9px 16px;
+  border-radius: 6px;
+  background-color: #F97316;
+  border: 1px solid #F97316;
+  font-size: 20px;
+  cursor: pointer;
+}
+.reset-btn:active{
+  transform: scale(0.95);
 }
