@@ -1,0 +1,9 @@
+.board-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 1fr 1fr 1fr;
+  width: 120px;
+  /* clear: both;
+  content: '';
+  display: table; */
+}
