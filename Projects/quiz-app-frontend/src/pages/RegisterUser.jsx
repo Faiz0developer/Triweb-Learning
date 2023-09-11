@@ -1,54 +1,83 @@
-import { useRef } from "react";
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from "react";
+
+import UserRegister from "../components/UserRegister";
+import Styles from "../../styles/RegisterUser.module.css";
 
 const RegisterUser = () => {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const confirmPasswordRef = useRef();
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+  const [userConfirmPassword, setUserConfirmPassword] = useState("");
+  const [isRegistered, setIsRegistered] = useState(false);
+  const [regitrationsDetails, setRegitrationsDetails] = useState("");
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const name = nameRef.current.value;
-    const password = passwordRef.current.value;
-    const email = emailRef.current.value;
-    const confirm_password = confirmPasswordRef.current.value;
-    const userDetails = {
-        name,
-        email,
-        password,
-        confirm_password
-    }
-
-    fetch('http://localhost:3000/auth/',{
-        method:"POST",
-        body:JSON.stringify(userDetails),
-        headers: {
-            "Content-Type": "application/json",
-          },
-    }).then(result => result.json()).then((res => console.log(res))).catch(err=>console.log(err))
-
-    console.log(userDetails)
+  const userData = {
+    name: userName,
+    email: userEmail,
+    password: userPassword,
+    confirm_password: userConfirmPassword,
   };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    setIsRegistered(false);
+    const data = await fetch("http://localhost:3000/auth/", {
+      method: "POST",
+      body: JSON.stringify(userData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const result = await data.json();
+    setRegitrationsDetails(result);
+    setIsRegistered(true);
+  };
+
+  if (isRegistered) {
+    return (
+      <div className="w-1/3 mt-12 bg-[#365314] p-12 rounded-lg">
+        {regitrationsDetails.status === "success" ? (
+          <p
+            className={`${Styles.registerSuccesfull} text-[#4ADE80] px-12 py-3 text-2xl`}
+          >
+            {regitrationsDetails.message} ✔{" "}
+          </p>
+        ) : (
+          <p
+            className={`${Styles.registerSuccesfull} text-[#B91C1C] px-12 py-3 text-2xl`}
+          >
+            {`${regitrationsDetails.data[0].msg} !`}{" "}
+          </p>
+        )}
+        <form
+          onSubmit={submitHandler}
+          className="flex flex-col gap-12 text-white"
+        >
+          <UserRegister
+            onSubmitData={submitHandler}
+            userName={setUserName}
+            userEmail={setUserEmail}
+            userPassword={setUserPassword}
+            userConfirmPassword={setUserConfirmPassword}
+          />
+        </form>
+      </div>
+    );
+  }
   return (
-    <div className="w-1/3 mt-12 bg-[#365314] p-12">
-      <form onSubmit={submitHandler} className="flex flex-col gap-12 text-white">
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" ref={nameRef} placeholder="Enter your name" className="py-2 text-black"/>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="email">Email</label>
-          <input type="text" id="email" ref={emailRef} placeholder="Enter your email" className="py-2 text-black"/>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="password">Password</label>
-          <input type="text" id="password" ref={passwordRef} placeholder="Enter password" className="py-2 text-black"/>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="confirmPassword">Confirm Password</label>
-          <input type="text" id="confirmPassword" ref={confirmPasswordRef} placeholder="Confirm your password" className="py-2 text-black"/>
-        </div>
-        <button className="bg-[#78350F] py-3">Register</button>
+    <div className="w-1/3 mt-12 bg-[#365314] p-12 rounded-lg">
+      <form
+        onSubmit={submitHandler}
+        className="flex flex-col gap-12 text-white"
+      >
+        <UserRegister
+          onSubmitData={submitHandler}
+          userName={setUserName}
+          userEmail={setUserEmail}
+          userPassword={setUserPassword}
+          userConfirmPassword={setUserConfirmPassword}
+        />
       </form>
     </div>
   );
