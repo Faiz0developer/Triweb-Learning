@@ -137,6 +137,10 @@ day-12 => iterators,generator,rest-spread operator -:
 
 2. QuizManager -: Created REST APIs for a quiz app using node with typescript and mongoDB.In this folder you will get different different APIs like for register user,login user, create quiz,get quiz, publish quiz , report API and so on.
 
+3. quiz-app-frontend-: I created a frontend side of QuizManager backend using React. In this project I created User Register and Login page. User can register using the regisration api and similarly he/she can login as data is store in database.
+
+4. TicTacToe-: Created a tic-tac-toe game using react and its differnt concepts.
+
 ---
 
 #5: MySQL -> Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
@@ -193,3 +197,12 @@ workbench -> Implement queries on workbench ->
     ● Project-1: In this folder I implement typescript to build a server and practice types of typescript like interface, union, types alias, class and so on.
 
 ---
+
+
+#10: React: React is a library of javascript for making UI. This folder contains implementation of react concepts.
+
+    ● props-hooks: React is basically all about hooks and props. Will get here implementation of props and some react hooks.
+    ● react-router: For routing to different pages react uses third party package called react-router-dom. It contains a basic project in which user can route to differnt pages and one page is connect with backend (backend-app folder).
+
+
+*********************************************************************************************************************
