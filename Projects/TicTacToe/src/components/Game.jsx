@@ -4,13 +4,25 @@ import Styles from './Game.module.css'
 
 const Game = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [currentMove,setCurrentMove] = useState(0)
   const [isXNext, setIsXNext] = useState(true);
-  const currentSquare = history[history.length - 1];
+  const currentSquare = history[currentMove];
+  console.log(history)
 
   const handlePlay = (nextSquares) => {
-    setHistory([...history, nextSquares]);
+    const nextHistory = [...history.slice(0,currentMove+1),nextSquares]
+    console.log(nextHistory)
+    // setHistory([...history, nextSquares]);
+    setHistory(nextHistory)
+    setCurrentMove(nextHistory.length-1)
     setIsXNext(!isXNext);
   };
+
+  
+  const jumpTo = (nextMove) =>{
+    setCurrentMove(nextMove)
+    setIsXNext(nextMove%2===0)
+  }
 
   const moves = history.map((squares,move) => {
     let description;
@@ -21,7 +33,7 @@ const Game = () => {
     }
     return(
         <li key={move}>
-            <button>{description} </button>
+            <button onClick={()=>jumpTo(move) }>{description} </button>
         </li>
     )
   })   
