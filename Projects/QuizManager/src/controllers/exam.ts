@@ -18,6 +18,7 @@ const startExam = async (req: Request, res: Response, next: NextFunction) => {
       name: 1,
       questions_list: 1,
       is_published: 1,
+      created_by:1
     });
     if (!quiz) {
       const err = new CustomError("Quiz not found");
@@ -26,6 +27,11 @@ const startExam = async (req: Request, res: Response, next: NextFunction) => {
     }
     if (!quiz.is_published) {
       const err = new CustomError("Quiz is not published");
+      err.statusCode = 405;
+      throw err;
+    }
+    if(quiz.created_by.toString()=== req.userId){
+      const err = new CustomError("You are not allowed");
       err.statusCode = 405;
       throw err;
     }
@@ -45,10 +51,15 @@ const submitExam = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const quizId = req.body.quizId;
     const attempted_questions = req.body.attempted_questions;
-    const quiz = await Quiz.findById(quizId, { answers: 1 });
+    const quiz = await Quiz.findById(quizId, { answers: 1,created_by:1 });
     if (!quiz) {
       const err = new CustomError("Quiz not found");
       err.statusCode = 404;
+      throw err;
+    }
+    if(quiz.created_by.toString()=== req.userId){
+      const err = new CustomError("You are not allowed");
+      err.statusCode = 405;
       throw err;
     }
     const answers = quiz.answers;

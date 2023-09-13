@@ -1,52 +1,64 @@
 import { useState } from "react";
 import Board from "./Board";
-import Styles from './Game.module.css'
+import Styles from "./Game.module.css";
 
 const Game = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
-  const [currentMove,setCurrentMove] = useState(0)
+  const [currentMove, setCurrentMove] = useState(0);
   const [isXNext, setIsXNext] = useState(true);
+  const [gameMoves, setGameMoves] = useState([]);
   const currentSquare = history[currentMove];
-  console.log(history)
 
   const handlePlay = (nextSquares) => {
-    const nextHistory = [...history.slice(0,currentMove+1),nextSquares]
-    console.log(nextHistory)
-    // setHistory([...history, nextSquares]);
-    setHistory(nextHistory)
-    setCurrentMove(nextHistory.length-1)
+    const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+    setHistory(nextHistory);
+    setCurrentMove(nextHistory.length - 1);
     setIsXNext(!isXNext);
+    setGameMoves(nextHistory);
   };
 
-  
-  const jumpTo = (nextMove) =>{
-    setCurrentMove(nextMove)
-    setIsXNext(nextMove%2===0)
-  }
+  const jumpTo = (nextMove) => {
+    setCurrentMove(nextMove);
+    setIsXNext(nextMove % 2 === 0);
+  };
 
-  const moves = history.map((squares,move) => {
-    let description;
-    if(move>0){
-        description = `Go to move # ${move}`
-    }else{
-        description=`Go to game start`
+  const playAgain = () => {
+    setCurrentMove(0);
+    setIsXNext(true);
+    setGameMoves([]);
+  };
+
+  const moves = gameMoves?.map((squares, move) => {
+    let gameDescription;
+    if (move > 0) {
+      gameDescription = `Go to move # ${move}`;
+    } else {
+      return;
     }
-    return(
-        <li key={move}>
-            <button onClick={()=>jumpTo(move) }>{description} </button>
-        </li>
-    )
-  })   
+    return (
+      <li key={move}>
+        <button onClick={() => jumpTo(move)}>{gameDescription} </button>
+      </li>
+    );
+  });
 
   return (
     <div className={Styles.game_container}>
-      <Board
-        isXNext={isXNext}
-        squares={currentSquare}
-        onPlay={handlePlay}
-        setHistory={setHistory}
+      <div className="container">
+        <Board
+          isXNext={isXNext}
+          squares={currentSquare}
+          onPlay={handlePlay}
+          setHistory={setHistory}
         />
-        <ol className={Styles.moves}>{moves} </ol>
+        <button className="reset-btn" onClick={playAgain}>
+          Play Again
+        </button>
+      </div>
+      <div className={Styles.moves}>
+        <h4>Moves:</h4>
+        <ol>{moves}</ol>
+      </div>
     </div>
   );
 };

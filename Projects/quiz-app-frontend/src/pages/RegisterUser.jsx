@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import UserRegister from "../components/UserRegister";
 import Styles from "../../styles/RegisterUser.module.css";
@@ -36,7 +36,7 @@ const RegisterUser = () => {
 
   if (isRegistered) {
     return (
-      <div className="w-1/3 mt-12 bg-[#365314] p-12 rounded-lg">
+      <div className="flex flex-col w-full items-center ">
         {regitrationsDetails.status === "success" ? (
           <p
             className={`${Styles.registerSuccesfull} text-[#4ADE80] px-12 py-3 text-2xl`}
@@ -44,24 +44,31 @@ const RegisterUser = () => {
             {regitrationsDetails.message} ✔{" "}
           </p>
         ) : (
-          <p
-            className={`${Styles.registerSuccesfull} text-[#B91C1C] px-12 py-3 text-2xl`}
-          >
-            {`${regitrationsDetails.data[0].msg} !`}{" "}
-          </p>
+          ""
         )}
-        <form
-          onSubmit={submitHandler}
-          className="flex flex-col gap-12 text-white"
-        >
-          <UserRegister
-            onSubmitData={submitHandler}
-            userName={setUserName}
-            userEmail={setUserEmail}
-            userPassword={setUserPassword}
-            userConfirmPassword={setUserConfirmPassword}
-          />
-        </form>
+        <div className="w-1/3 mt-12 bg-[#365314] p-12 rounded-lg">
+          {regitrationsDetails.status === "error" ? (
+            <p
+              className={`${Styles.registerSuccesfull} text-[#B91C1C] px-4 py-3 text-base font-bold`}
+            >
+              {`${regitrationsDetails.message} !`}{" "}
+            </p>
+          ) : (
+            ""
+          )}
+          <form
+            onSubmit={submitHandler}
+            className="flex flex-col gap-12 text-white"
+          >
+            <UserRegister
+              onSubmitData={submitHandler}
+              userName={setUserName}
+              userEmail={setUserEmail}
+              userPassword={setUserPassword}
+              userConfirmPassword={setUserConfirmPassword}
+            />
+          </form>
+        </div>
       </div>
     );
   }

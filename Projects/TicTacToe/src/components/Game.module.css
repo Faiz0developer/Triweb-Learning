@@ -1,8 +1,15 @@
 .game_container{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 70px;
+    margin-top: 100px;
 }
 .moves{
     align-self: center;
+    padding: 0px;
+    text-align: center;
+}
+.moves h4, .moves ol{
+    margin: 6px 0px;
+    padding: 0px;
 }

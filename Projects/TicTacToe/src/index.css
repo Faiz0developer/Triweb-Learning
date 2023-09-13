@@ -4,6 +4,9 @@
   align-items: center;
   gap: 20px;
 }
+.container h1{
+  margin: 0px;
+}
 .board-row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -12,6 +15,9 @@
 }
 .winner-winner{
   color: green;
+}
+.noOneWin{
+  color: red;
 }
 
 .square_gameOn{

@@ -10,12 +10,8 @@
     padding: 0;
     text-align: center;
 }
-.square_gameOn{
-    background-color: #fff;
+.square_noOneWin{
+    background-color: red;
     border: 1px solid #999;
-}
-.square_winner{
-    background-color: green;
-    border: 1px solid #999;
-    color: wheat;
+    color: white;
 }

@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import Square from "./Square";
-const Board = ({setHistory,isXNext, squares, onPlay}) => {
 
+const Board = ({isXNext, squares, onPlay}) => {
+  
   function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
@@ -27,6 +28,7 @@ const Board = ({setHistory,isXNext, squares, onPlay}) => {
     return null;
   }
 
+
   const handleClick = (i) => {
     const nextSquares = squares.slice();
 
@@ -40,36 +42,48 @@ const Board = ({setHistory,isXNext, squares, onPlay}) => {
     }
     onPlay(nextSquares)
   };
+  
+  const val =squares?.every(ele => ele!==null)
 
   const winner = calculateWinner(squares);
   let status;
   if (winner) {
     status = `Winner: ${winner}`;
   } else {
-    status = `Next Player: ${isXNext ? "X" : "O"}`;
+    if(!val){
+      status = `Next Player: ${isXNext ? "X" : "O"}`;
+    }
+    else{
+      status=`No one win !`
+    }
   }
 
-  const resetGame = () => {
-    setHistory([Array(9).fill(null)]);
-  };
+  let classes
+  if(winner){
+    classes = 'winner-winner'
+  }else {
+    if(val){
+      classes='noOneWin'
+    }else{
+      classes=''
+    }
+  }
+
   return (
-    <div className="container">
-      <h1 className={`${winner ? "winner-winner" : ""}`}>{status} </h1>
+    <>
+      <h1 className={classes}>{status} </h1>
       <div className="board-row">
-        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-        <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
-        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-        <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
-        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-        <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-        <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} val={val}/>
+        <Square value={squares[1]} onSquareClick={() => handleClick(1)} val={val}/>
+        <Square value={squares[2]} onSquareClick={() => handleClick(2)} val={val}/>
+        <Square value={squares[3]} onSquareClick={() => handleClick(3)} val={val}/>
+        <Square value={squares[4]} onSquareClick={() => handleClick(4)} val={val}/>
+        <Square value={squares[5]} onSquareClick={() => handleClick(5)} val={val}/>
+        <Square value={squares[6]} onSquareClick={() => handleClick(6)} val={val}/>
+        <Square value={squares[7]} onSquareClick={() => handleClick(7)} val={val}/>
+        <Square value={squares[8]} onSquareClick={() => handleClick(8)} val={val}/>
       </div>
-      <button className="reset-btn" onClick={resetGame}>
-        Reset
-      </button>
-    </div>
+    </>
   );
 };
 
