@@ -1,18 +1,22 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./header/Navbar";
+import "../App.css";
+import Design from "./Design";
+import HeaderBody from "./header/HeaderBody";
 
 const Layout = () => {
   return (
     <>
-    
-    <header className='bg-white'>
-        <Navbar/>
-    </header>
-    <main>
-        <h1>main</h1>
-    </main>
+      <Design />
+      <header className="bg-white">
+        <Navbar />
+        <HeaderBody/>
+      </header>
+      <main>
+        <section></section>
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

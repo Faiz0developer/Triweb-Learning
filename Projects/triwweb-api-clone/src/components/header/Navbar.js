@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../styles/Navbar.css'
+import '../../styles/Navbar.css'
 
 const Navbar = () => {
   const [heading,setHeading] =useState(true)

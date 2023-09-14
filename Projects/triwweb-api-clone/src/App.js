@@ -2,7 +2,7 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container-fluid p-0">
         <Layout/>      
     </div>
   );
