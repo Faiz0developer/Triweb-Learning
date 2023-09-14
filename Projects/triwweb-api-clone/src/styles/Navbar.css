@@ -1,0 +1,13 @@
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+.heading-text{
+    color: #07509e;
+    font-weight: 600;
+}
+.left-container{
+    color: black;
+}
