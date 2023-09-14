@@ -1,6 +1,6 @@
-/* header{
-        z-index: 20;
-    } */
+header{
+  height: 120vh;
+}
 .center {
   display: flex;
   align-items: center;
@@ -79,3 +79,29 @@
   color: #333333;
   background-color: #fff;
 }
+
+ footer p{
+   color: #4a80b9;
+
+ }
+
+@media screen and (min-width:650px) { 
+  footer{
+   padding: 20px 150px;
+   font-size: 50px
+  }
+  footer p{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:649px) { 
+  footer{
+   padding: 20px 50px;
+   font-size: 30px
+  }
+  footer p{
+    font-size: 20px;
+  }
+}
+

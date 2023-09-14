@@ -10,11 +10,18 @@ const Layout = () => {
       <Design />
       <header className="bg-white">
         <Navbar />
-        <HeaderBody/>
+        <HeaderBody />
       </header>
       <main>
-        <section></section>
+        <section>main</section>
       </main>
+      <footer className="bg-secondary-subtle d-flex justify-content-between footer">
+        <p className="m-0 fw-semibold">triwebAPI</p>
+        <div>
+        <i className="fa-brands fa-linkedin" style={{color:"#0d6efd"}}></i>
+        <i className="fa-brands fa-twitter ms-4" style={{color:"#5aa2f0"}}></i>
+        </div>
+      </footer>
     </>
   );
 };
