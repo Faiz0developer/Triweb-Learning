@@ -3,6 +3,9 @@ import Navbar from "./header/Navbar";
 import "../App.css";
 import Design from "./Design";
 import HeaderBody from "./header/HeaderBody";
+import Project from "./main/Project";
+import ExprerienceDevelopment from "./main/Exprerience-development";
+import AnalyzeProject from "./main/Analyze-project";
 
 const Layout = () => {
   return (
@@ -12,8 +15,18 @@ const Layout = () => {
         <Navbar />
         <HeaderBody />
       </header>
-      <main>
-        <section>main</section>
+      <main className="container-fluid bg-img">
+        <div className="col-xl-9 col-10 mx-auto">
+          <section>
+            <Project/>
+          </section>
+          <section>
+            <ExprerienceDevelopment/>
+          </section>
+          <section>
+            <AnalyzeProject/>
+          </section>
+        </div>
       </main>
       <footer className="bg-secondary-subtle d-flex justify-content-between footer">
         <p className="m-0 fw-semibold">triwebAPI</p>

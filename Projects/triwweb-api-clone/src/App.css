@@ -1,4 +1,4 @@
-header{
+header {
   height: 120vh;
 }
 .center {
@@ -7,10 +7,9 @@ header{
   justify-content: center;
 }
 .center > div > h1 {
-  font-size: 6rem;
-  line-height: 5.2rem;
   font-weight: 700;
   padding: 4px 12px;
+  z-index: 20;
   background: linear-gradient(
     90deg,
     #0aa3ff,
@@ -24,21 +23,21 @@ header{
 }
 
 .center > div > h2 {
-  font-size: 5rem;
   color: #252525;
+  z-index: 20;
 }
 .center > div > p {
-  font-size: 1.2rem;
+  z-index: 20;
   margin-top: 16px;
   color: #000000;
   font-weight: 500;
 }
 .bg-circle {
   position: absolute;
-  height: 105vh;
-  width: 100vw;
-  border-bottom-left-radius: 100vw;
-  border-bottom-right-radius: 100vw;
+  height: 99vh;
+  width: 99vw;
+  border-bottom-left-radius: 70vw;
+  border-bottom-right-radius: 70vw;
   top: 0;
   margin-top: -10px;
   /* z-index: -1; */
@@ -80,28 +79,126 @@ header{
   background-color: #fff;
 }
 
- footer p{
-   color: #4a80b9;
+.bg-img {
+  background-image: url("https://triwebapi.com/static/media/background.089d3668a859a07b0c74.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
- }
+.experience-container {
+  color: #252525;
+}
+.heading {
+  font-size: 6rem;
+}
+.subHeading {
+  font-size: 4rem;
+}
+.experience-container > p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 25px;
+}
 
-@media screen and (min-width:650px) { 
-  footer{
-   padding: 20px 150px;
-   font-size: 50px
+.p1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(
+      195.3deg,
+      rgba(0, 0, 0, 0.5) -7.87%,
+      rgba(0, 122, 255, 0.5) 76.39%
+    ),
+    linear-gradient(148.18deg, #111 19.15%, #007aff 107.12%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.content{
+  font-size: 1.3rem;
+}
+
+.demo-btn{
+  font-size: 1.3rem;
+}
+
+footer p {
+  color: #4a80b9;
+}
+
+@media screen and (min-width: 750px) {
+  .center > div > h1 {
+    font-size: 6rem;
+    line-height: 5.2rem;
+    padding: 4px 12px;
   }
-  footer p{
+  .center > div > h2 {
+    font-size: 5rem;
+  }
+  .center > div > p {
+    font-size: 1.2rem;
+    margin-top: 16px;
+  }
+  footer {
+    padding: 20px 150px;
+    font-size: 50px;
+  }
+  footer p {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width:649px) { 
-  footer{
-   padding: 20px 50px;
-   font-size: 30px
+@media screen and (max-width: 749px) {
+  header {
+    height: 110vh;
   }
-  footer p{
+  .bg-circle {
+    height: 95vh;
+  }
+  .center > div > h1 {
+    font-size: 5rem;
+    line-height: 4.2rem;
+  }
+  .center > div > h2 {
+    font-size: 4rem;
+  }
+  .center > div > p {
+    font-size: 1rem;
+  }
+  .btn-1 {
+    padding: 9px 36px;
+  }
+  .btn-cont {
+    width: 200px;
+  }
+  footer {
+    padding: 20px 50px;
+    font-size: 30px;
+  }
+  footer p {
     font-size: 20px;
   }
 }
 
+@media screen and (max-width: 550px) {
+  header {
+    height: 100vh;
+  }
+  .center > div > h1 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+  .center > div > h2 {
+    font-size: 2.5rem;
+  }
+  .btn-1 {
+    padding: 9px 26px;
+  }
+  .btn-cont {
+    width: 150px;
+  }
+}

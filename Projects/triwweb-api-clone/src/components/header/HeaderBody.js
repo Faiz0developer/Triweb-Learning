@@ -2,7 +2,7 @@ import React from "react";
 
 const HeaderBody = () => {
   return (
-    <div className="col-10 mx-auto my-5 py-4 z-3">
+    <div className="col-10 mx-auto z-3">
       <div className="center">
         <div className="row">
           <h1 className="text-center">Web3 Development</h1>
