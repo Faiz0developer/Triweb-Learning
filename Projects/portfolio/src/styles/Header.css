@@ -1,0 +1,25 @@
+.header-style{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: #070d1b;
+    border-right: 1px solid #101624;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.left-container{
+    margin-left: -40px;
+    margin-right: -40px;
+    border-bottom: 1px solid #101624;
+    padding-bottom: 40px;
+}
+.img-container{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,.1);
+    margin: auto;
+}
