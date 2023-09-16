@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Header.css";
-import MyImage from '../assets/my-img.png'
+import MyImage from "../assets/my-img.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,7 +19,16 @@ const Header = () => {
           </div>
           <div className="ml-4 mt-8">
             <ul className="flex flex-col gap-6 text-[#fdfeff] font-light">
-              <li>HOME</li>
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "active" : ""
+                  }
+                >
+                  HOME
+                </NavLink>
+              </li>
               <li>ABOUT</li>
               <li>RESUME</li>
               <li>SKILLS</li>

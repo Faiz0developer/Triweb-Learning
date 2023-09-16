@@ -23,3 +23,7 @@
     border: 6px solid rgba(255,255,255,.1);
     margin: auto;
 }
+
+.active{
+    color: #fec544;
+}

@@ -1,0 +1,11 @@
+.bg-img {
+  background-image: url("https://devis-react.vercel.app/images/background/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .home-title {
+  background: linear-gradient(to left, rgba(255, 255, 255), #fec544);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+} */
