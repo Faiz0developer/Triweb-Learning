@@ -40,7 +40,7 @@ router.post(
 );
 
 //get quiz
-router.get("/:quizId", isAuthenticated, getQuiz);
+router.get("/:quizId?", isAuthenticated, getQuiz);
 
 //update quiz
 router.put(

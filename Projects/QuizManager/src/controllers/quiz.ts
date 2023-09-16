@@ -41,23 +41,30 @@ const createQuiz = async (req: Request, res: Response, next: NextFunction) => {
 // get middleware
 const getQuiz = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    let quiz;
     const quizId = req.params.quizId;
-    const quiz = await Quiz.findById(quizId, {
-      name: 1,
-      questions_list: 1,
-      answers: 1,
-      created_by: 1,
-    });
+
+    if (quizId) {
+      quiz = await Quiz.findById(quizId);
+      if (req.userId !== quiz?.created_by.toString()) {
+        const err = new CustomError("You are not authorized");
+        err.statusCode = 403;
+        throw err;
+      }
+    } else {
+      quiz = await Quiz.find({ created_by: req.userId });
+      if(quiz.length===0){
+        const err = new CustomError("You are not authorized");
+        err.statusCode = 403;
+        throw err;
+      }
+    }
     if (!quiz) {
       const err = new CustomError("Quiz not found");
       err.statusCode = 404;
       throw err;
     }
-    if (req.userId !== quiz.created_by.toString()) {
-      const err = new CustomError("You are not authorized");
-      err.statusCode = 403;
-      throw err;
-    }
+
     const resp: ReturnResponse = {
       status: "success",
       message: "Quiz",
