@@ -1,44 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Header.css";
 import MyImage from "../assets/my-img.png";
-import { NavLink } from "react-router-dom";
+import NavbarLink from "./ui/NavbarLink";
 
 const Header = () => {
+  const [isNavBarHidden, setIsNavBarHidden] = useState(true);
+
+  const ChangeNavVisibility = () => {
+    setIsNavBarHidden(true);
+  };
+
   return (
-    <header className="header-style">
-      <div className="pb-20 pt-10 px-6">
-        <div>
-          <div className="left-container">
-            <div className="img-container">
-              <img
-                src={MyImage}
-                alt="This is my pic"
-                className="w-full h-full object-cover	rounded-full"
-              />
+    <>
+      <header
+        className={`header-style ${
+          isNavBarHidden ? " header-style-hidden" : "header-style-visible"
+        }`}
+      >
+        <div className="mobile-view pb-20 pt-10 px-2">
+          <div>
+            <div className="left-container">
+              <div className="img-container">
+                <img
+                  src={MyImage}
+                  alt="This is my pic"
+                  className="w-full h-full object-cover	rounded-full"
+                />
+              </div>
             </div>
-          </div>
-          <div className="ml-4 mt-8">
-            <ul className="flex flex-col gap-6 text-[#fdfeff] font-light">
-              <li>
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    isActive ? "active" : ""
-                  }
-                >
-                  HOME
-                </NavLink>
-              </li>
-              <li>ABOUT</li>
-              <li>RESUME</li>
-              <li>SKILLS</li>
-              <li>PORTFOLIO</li>
-              <li>CONTACT</li>
+            <ul className="right-container text-[#a4acc4] font-light">
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="HOME"
+              />
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/about"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="ABOUT"
+              />
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/resume"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="RESUME"
+              />
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/skills"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="SKILLS"
+              />
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/portfolio"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="PORTFOLIO"
+              />
+              <NavbarLink
+                onChangeVisivility={ChangeNavVisibility}
+                to="/contact"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                navData="CONTACT"
+              />
             </ul>
           </div>
         </div>
-      </div>
-    </header>
+        <div
+          className="toggle-button"
+          onClick={() => setIsNavBarHidden(!isNavBarHidden)}
+        >
+          <div className="div-button">
+            <div className={`${isNavBarHidden ? "line-1" : ""}`}></div>
+            <div>
+              <div
+                className={`${isNavBarHidden ? "line-2a" : "line-2a-visible"} `}
+              ></div>
+              <div
+                className={`${isNavBarHidden ? "" : "line-2b-visible"}`}
+              ></div>
+            </div>
+            <div className={`${isNavBarHidden ? "line-3" : ""}`}></div>
+          </div>
+        </div>
+      </header>
+    </>
   );
 };
 

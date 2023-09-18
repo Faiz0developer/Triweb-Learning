@@ -4,8 +4,30 @@
   background-size: cover;
 }
 
-/* .home-title {
-  background: linear-gradient(to left, rgba(255, 255, 255), #fec544);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-} */
+.home-title{
+  animation: bounce 2s ease-out;
+}
+
+@keyframes bounce{
+  0%{
+    transform: translateX(-800px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.my-details{
+  animation: blinkAnime 3s ease-out;
+}
+@keyframes blinkAnime{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
