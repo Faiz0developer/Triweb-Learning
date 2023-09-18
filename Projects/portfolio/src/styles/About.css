@@ -1,0 +1,23 @@
+.bg-text{
+    color: rgba(25,29,43,.44);
+    font-size: 44px;
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    text-transform: uppercase;
+    user-select: none;
+    z-index: -1;
+}
+/* absolute h-[45vh] w-full bg-black z-0 */
+.bg-top{
+    position: absolute;
+    top: -20px;
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(2, 1, 20);
+    /* z-index: -10; */
+}
+
+.personal-details{
+    border-bottom: 1px solid  white;
+}

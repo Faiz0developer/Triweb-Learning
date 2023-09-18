@@ -15,7 +15,7 @@ function App() {
       <main className="bg-img">
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<AboutPage/>} />
+          <Route path="/my-profile" element={<AboutPage/>} />
           <Route path="/resume" element={<ResumePage/>} />
           <Route path="/skills" element={<SkillsPage/>} />
           <Route path="/portfolio" element={<PortfolioPage/>} />

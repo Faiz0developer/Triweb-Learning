@@ -2,6 +2,7 @@
   background-image: url("https://devis-react.vercel.app/images/background/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -10;
 }
 
 .home-title{
