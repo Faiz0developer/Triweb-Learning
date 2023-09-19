@@ -46,23 +46,22 @@ const getQuiz = async (req: Request, res: Response, next: NextFunction) => {
 
     if (quizId) {
       quiz = await Quiz.findById(quizId);
-      if (req.userId !== quiz?.created_by.toString()) {
+      if (!quiz) {
+        const err = new CustomError("Quiz not found");
+        err.statusCode = 404;
+        throw err;
+      } else if (req.userId !== quiz?.created_by.toString()) {
         const err = new CustomError("You are not authorized");
         err.statusCode = 403;
         throw err;
       }
     } else {
       quiz = await Quiz.find({ created_by: req.userId });
-      if(quiz.length===0){
-        const err = new CustomError("You are not authorized");
-        err.statusCode = 403;
-        throw err;
-      }
-    }
-    if (!quiz) {
-      const err = new CustomError("Quiz not found");
-      err.statusCode = 404;
-      throw err;
+      // if(quiz.length===0){
+      //   const err = new CustomError("You have not created any quiz yet!");
+      //   err.statusCode = 404;
+      //   throw err;
+      // }
     }
 
     const resp: ReturnResponse = {

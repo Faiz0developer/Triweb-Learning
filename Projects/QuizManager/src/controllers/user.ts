@@ -17,12 +17,12 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
     const userId = req.params.userId;
-    if (req.userId != req.params.userId) {
-      const err = new CustomError("You are not authorized");
-      err.statusCode = 401;
-      err.data = { hi: "It'sError " };
-      throw err;
-    }
+    // if (req.userId != req.params.userId) {
+    //   const err = new CustomError("You are not authorized");
+    //   err.statusCode = 401;
+    //   err.data = { hi: "It'sError " };
+    //   throw err;
+    // }
     const user = await User.findById(userId, { name: 1, email: 1 });
     if (!user) {
       const err = new CustomError("No user exist");
@@ -41,11 +41,11 @@ const getUser = async (req: Request, res: Response, next: NextFunction) => {
 const updateUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
   try {
-    if (req.userId != req.body._id) {
-      const err = new CustomError("You are not authorized");
-      err.statusCode = 401;
-      throw err;
-    }
+    // if (req.userId != req.body._id) {
+    //   const err = new CustomError("You are not authorized");
+    //   err.statusCode = 401;
+    //   throw err;
+    // }
     const userId = req.body._id;
     const user = await User.findById(userId);
     if (!user) {

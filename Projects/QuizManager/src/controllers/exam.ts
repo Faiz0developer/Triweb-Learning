@@ -65,13 +65,15 @@ const submitExam = async (req: Request, res: Response, next: NextFunction) => {
     const answers = quiz.answers;
 
     const userId = req.userId;
-    console.log(userId);
-
     const allQuestions = Object.keys(answers);
     const total = allQuestions.length;
-
+  
     let score = 0;
 
+    if(Object.keys(attempted_questions).length > total){
+      res.send('Error')  
+    }
+    
     for (let i = 0; i < total; i++) {
       let question_number = allQuestions[i];
       if (
