@@ -50,6 +50,7 @@ const registerUser = async (
 
 const loginUser = async (req: Request, res: Response, next: NextFunction) => {
   let resp: ReturnResponse;
+  const secretKey = process.env.SECRET_KEY || ""
   try {
     const email = req.body.email;
     const password = req.body.password;
@@ -65,9 +66,10 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
       // verify user using bcrypt
       const status = await bcrypt.compare(password, user.password);
       if (status) {
+        
         const token = jwt.sign(
           { userId: user._id },
-          "keepsecretmythissecretkey",
+          secretKey,
           { expiresIn: "1h" }
         );
         resp = {

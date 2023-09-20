@@ -4,6 +4,7 @@ import jwt from "jsonwebtoken";
 import CustomError from "../helper/error";
 
 const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
+  const secretKey = process.env.SECRET_KEY || ""
   try {
     //header -->> get token
     const authHeader = req.get("Authorization");
@@ -20,7 +21,8 @@ const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
     ///jwt -->> decode token using sign
     let decodedToken: { userId: String; iat: Number; exp: Number };
     try {
-      decodedToken = <any>jwt.verify(token, "keepsecretmythissecretkey");
+      
+      decodedToken = <any>jwt.verify(token, secretKey);
     } catch (error) {
       const err = new CustomError("Not authenticated");
       err.statusCode = 401;
