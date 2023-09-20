@@ -19,8 +19,8 @@ const Home = () => {
             websites.
           </p>
           <div className="flex justify-center items-center gap-8 mt-6 h-12">
-            <Link>
-              <i className="fa-brands fa-facebook fa-2xl fa-beat-fade text-white cursor-pointer mt-3"></i>
+            <Link to="https://twitter.com/FaizanS32830141" target="_blank">
+              <i className="fa-brands fa-twitter fa-2xl fa-beat-fade text-white cursor-pointer mt-3"></i>
             </Link>
             <Link
               to="https://www.linkedin.com/in/faizan-siddiqui-6a40ba187"

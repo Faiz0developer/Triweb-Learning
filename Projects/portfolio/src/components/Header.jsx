@@ -41,12 +41,12 @@ const Header = () => {
                 className={({ isActive }) => (isActive ? "active" : "")}
                 navData="PROFILE"
               />
-              <NavbarLink
+              {/* <NavbarLink
                 onChangeVisivility={ChangeNavVisibility}
                 to="/resume"
                 className={({ isActive }) => (isActive ? "active" : "")}
                 navData="RESUME"
-              />
+              /> */}
               <NavbarLink
                 onChangeVisivility={ChangeNavVisibility}
                 to="/skills"

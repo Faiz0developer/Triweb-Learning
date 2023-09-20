@@ -27,3 +27,40 @@
         display: none;
     }
 }
+
+.download-btn{
+    background-color: #F8FAFC;
+    border: 1px ;
+    color: #334155;
+    display: inline-block;
+    font-size: .9rem;
+    height: 50px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    padding: 0 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+    z-index: 1;
+}
+
+/* .download-btn::before{
+    background-color: #0C4A6E;
+    bottom: 0;
+    content: "hey";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: auto;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all .4s ease-out;
+    width: 100%;
+    z-index: -1;
+} */
+
+.download-btn:hover{
+    background: transparent;
+    border: 1px solid #F8FAFC;
+    color: #F8FAFC;
+}
