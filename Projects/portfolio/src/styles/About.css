@@ -21,3 +21,9 @@
 .personal-details{
     border-bottom: 1px solid  white;
 }
+
+@media screen and (max-width:640ox) {
+    .btn-exp-res{
+        display: none;
+    }
+}
