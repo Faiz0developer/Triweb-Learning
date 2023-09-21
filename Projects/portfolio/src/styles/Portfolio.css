@@ -2,3 +2,16 @@
     opacity: 1;
     visibility: 1;
 }
+
+.project-container h2 a{
+    font-size: 28px;
+    padding-bottom: 8px;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all .4s ease-out;
+}
+
+.project-container h2 a:hover{
+    color: #0d6efd;
+}
+/* text-2xl text-[#0d6efd] pb-2 font-bold transition-all	hover:text-[#ffffff] */
