@@ -1,6 +1,6 @@
 import React from "react";
 import ContactCard from "./ContactCard";
-import { phonesvg,emailsvg,addresssvg } from "./ContactIcons";
+import { phonesvg, emailsvg, addresssvg } from "./ContactIcons";
 
 const ContactDetails = () => {
   return (

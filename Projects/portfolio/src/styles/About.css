@@ -8,14 +8,12 @@
     user-select: none;
     z-index: -1;
 }
-/* absolute h-[45vh] w-full bg-black z-0 */
 .bg-top{
     position: absolute;
     top: -20px;
     height: 55vh;
     width: 100%;
     background-color: rgb(2, 1, 20);
-    /* z-index: -10; */
 }
 
 .personal-details{
@@ -43,21 +41,6 @@
     transition: all .4s ease-out;
     z-index: 1;
 }
-
-/* .download-btn::before{
-    background-color: #0C4A6E;
-    bottom: 0;
-    content: "hey";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    top: auto;
-    transform: scaleX(0);
-    transform-origin: 0 0;
-    transition: all .4s ease-out;
-    width: 100%;
-    z-index: -1;
-} */
 
 .download-btn:hover{
     background: transparent;

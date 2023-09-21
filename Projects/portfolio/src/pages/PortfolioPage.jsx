@@ -4,11 +4,11 @@ import PortfolioProject from "../components/Portfolio/PortfolioProject";
 const PortfolioPage = () => {
   return (
     <section className="relative pt-20 text-[#a4acc4] pb-6">
-      <div className="py-3 px-10">
-        <div className="mb-6 relative ">
-          <h1 className="text-[#ffffff] font-semibold text-4xl uppercase">
+      <div className="py-3 px-4">
+        <div className="mb-12 relative ">
+          <h2 className="relative text-[#ffffff] font-semibold text-4xl uppercase">
             Portfolios
-          </h1>
+          </h2>
         </div>
         <div className="row pb-10">
           <PortfolioProject />

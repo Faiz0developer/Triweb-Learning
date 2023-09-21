@@ -19,19 +19,12 @@ const ProfileHero = () => {
           I am a MERN Stack developer. I provide clean code with customization.
           I build more and more interactive and complex websites.
         </p>
-      <button className="download-btn">
-        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:fca57974-d89b-40d0-a54d-08f47851d9c1">Download Resume</a>
-      </button>
-      </div>
-      {/* <div className="flex justify-center gap-8 pt-6 personal-details ">
-        <button className="bg-[#334155] py-3 px-6 rounded mb-2">
-          Personal Details
+        <button className="download-btn">
+          <a href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:fca57974-d89b-40d0-a54d-08f47851d9c1">
+            Download Resume
+          </a>
         </button>
-        <button className="bg-[#334155] py-1 px-3 md:py-3 md:px-6 rounded mb-2 cursor-pointer">Education</button>
-        <button>...</button>
-        <button className="btn-exp-res bg-[#334155] py-3 px-6 rounded mb-2">Experience</button>
-        <button className="btn-exp-res bg-[#334155] py-3 px-6 rounded mb-2">Resume</button>
-      </div> */}
+      </div>
     </div>
   );
 };

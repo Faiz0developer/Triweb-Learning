@@ -13,7 +13,8 @@ export const ProjectData = [
   },
   {
     title: "Bitfinex",
-    discription: "Beatiful website for cryptocurrencies which latest price, cap and so on.",
+    discription:
+      "Beatiful website for cryptocurrencies which latest price, cap and so on.",
   },
   {
     title: "Taskify",
@@ -25,7 +26,8 @@ export const ProjectData = [
   },
   {
     title: "My Expense",
-    discription: "Expense tracker app for tracking the monthly or yearly expense.",
+    discription:
+      "Expense tracker app for tracking the monthly or yearly expense.",
   },
   {
     title: "WeatherWen",
@@ -33,7 +35,8 @@ export const ProjectData = [
   },
   {
     title: "Monument Trip",
-    discription: "This is an monument website,which shows the location of monuments in map.",
+    discription:
+      "This is an monument website,which shows the location of monuments in map.",
   },
   {
     title: "Let's Shop",

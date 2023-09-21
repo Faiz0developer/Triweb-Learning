@@ -1,14 +1,14 @@
-.progress-container{
-    background-color: #2e344e;
-    display: block;
-    height: 6px;
-    position: relative;
-    width: 100%;
+.progress-container {
+  background-color: #2e344e;
+  display: block;
+  height: 6px;
+  position: relative;
+  width: 100%;
 }
-.progress-container span{
-    background-color: #037fff;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;    
+.progress-container span {
+  background-color: #037fff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
 }

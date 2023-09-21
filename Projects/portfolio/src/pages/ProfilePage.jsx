@@ -9,8 +9,8 @@ const AboutPage = () => {
   return (
     <section className="relative pt-20 text-[#a4acc4] pb-6">
       <div className="bg-top"></div>
-      <div className="px-6">
-        <div className="mb-12 relative z-1 p-3">
+      <div className="px-4">
+        <div className="mb-12 relative">
           <h2 className="relative text-[#ffffff] font-semibold text-4xl uppercase">
             Profile
           </h2>

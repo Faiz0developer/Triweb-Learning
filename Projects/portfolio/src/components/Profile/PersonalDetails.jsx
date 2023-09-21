@@ -6,7 +6,9 @@ const PersonalDetails = () => {
       <b className="text-white text-3xl">Personal Details</b>
       <div className="flex gap-12 min-[350px]:gap-20 pt-10">
         <div className="flex flex-col gap-4 text-xl ">
-          <b><i className="fa-solid fa-earth-americas"></i></b>
+          <b>
+            <i className="fa-solid fa-earth-americas"></i>
+          </b>
           <b>
             <i className="fa-solid fa-location-dot"></i>
           </b>

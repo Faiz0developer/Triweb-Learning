@@ -1,24 +1,24 @@
-.contact-container div span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #2e344e;
-    flex: 0 0 70px;
-    height: 70px;
-    line-height: 66px;
-    width: 70px;    
+.contact-container div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2e344e;
+  flex: 0 0 70px;
+  height: 70px;
+  line-height: 66px;
+  width: 70px;
 }
 
-@media screen and (max-width:640px) {
-    .contact-container div span{
-        flex: 0 0 50px;
-        height: 50px;
-        width: 50px;
-    }
+@media screen and (max-width: 640px) {
+  .contact-container div span {
+    flex: 0 0 50px;
+    height: 50px;
+    width: 50px;
+  }
 }
 
-@media screen and (min-height:700px) {
-    .contact-section{
-        height: 130vh;
-    }   
+@media screen and (min-height: 700px) {
+  .contact-section {
+    height: 130vh;
+  }
 }

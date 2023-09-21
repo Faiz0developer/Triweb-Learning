@@ -8,9 +8,11 @@ const Experience = () => {
       </p>
       <div className="pt-10">
         <div className="flex flex-col sm:flex-row sm:gap-24">
-        <b className="text-xl sm:w-1/4">2022</b>
-        <div className="sm:w-3/4">
-            <p className="text-[#037FFF] text-2xl font-medium">Frontend Developer</p>
+          <b className="text-xl sm:w-1/4">2022</b>
+          <div className="sm:w-3/4">
+            <p className="text-[#037FFF] text-2xl font-medium">
+              Frontend Developer
+            </p>
             <h2 className="text-white py-1">CodeXshark</h2>
             <p className="pb-10">
               I worked in CodeXshark for 3 months from December 2022 to March

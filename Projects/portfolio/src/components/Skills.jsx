@@ -1,6 +1,6 @@
 import React from "react";
 
-const Skills = ({skill,level,className}) => {
+const Skills = ({ skill, level, className }) => {
   return (
     <div className="col-lg-6 mt-10">
       <h6 className="text-[#ffffff] text-xl">{skill}</h6>
