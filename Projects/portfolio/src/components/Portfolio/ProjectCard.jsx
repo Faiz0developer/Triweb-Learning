@@ -1,13 +1,22 @@
 import React from "react";
 import "../../styles/Portfolio.css";
+import { NavLink } from "react-router-dom";
 
-const ProjectCard = ({ img, title, description, link }) => {
+const ProjectCard = ({ img, title, description, link,codeLink }) => {
   return (
     <>
-      <div className="col-lg-4 col-sm-6 col-10 mt-12 mx-auto">
+      <div className="portfolio-project relative col-lg-4 col-sm-6 col-10 mt-12 mx-auto">
         <div className="project-container">
-          <div className="block relative mb-3">
+          <div className="project-img block relative mb-3">
             <img src={img} alt={title} />
+            <ul>
+              <li>
+                <a href={link} target="_blank" rel="noreferrer">live</a>
+              </li>
+              <li>
+                <a href={codeLink} target="_blank" rel="noreferrer">code</a>
+              </li>
+            </ul>
           </div>
           <h2>
             <a href={link}>{title}</a>

@@ -1,16 +1,93 @@
+.portfolio-project{
+  padding: 4px 4px 0px ;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio-project::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-200deg);
+  width: 160%;
+  height: 130%;
+  background-image: conic-gradient(#000 0deg, #424141 90deg,transparent 130deg, transparent 180deg, #fff 180deg, #fff 270deg,transparent 310deg, transparent 360deg);
+  transition: transform 2s;
+  cursor: pointer;
+}
+.portfolio-project:hover::before{
+  transform: translate(-50%,-50%) rotate(-100deg);
+}
 .project-container {
-  opacity: 1;
-  visibility: 1;
+  position: relative;
+  z-index: 50;
+  height: 98%;
+  width: 98%;
+  margin: auto;
+  padding: 4px;
+  background-color: #000;
 }
 
 .project-container h2 a {
   font-size: 28px;
   padding-bottom: 8px;
-  color: #ffffff;
   font-weight: 700;
+  color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
-
-.project-container h2 a:hover {
-  color: #0d6efd;
+.project-container p{
+  font-weight: 700;
+  background-image: linear-gradient(to right, #fff, black ); 
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
 }
+
+.project-img::before{
+  content: "";
+  background-color: hsla(0,0%,100%,.9);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: 0;
+  transition: all 0.4s ease-out;
+  width: 100% ;
+}
+.project-img:hover::before{
+  transform: scaleX(1);
+}
+
+.project-img ul{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  top: 50%;
+  transition: all .4s ease-in-out .2s;
+}
+.project-img ul li a{
+  background-color: #a3a6aa;
+  color: black;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all .4s ease-out;
+}
+.project-container:hover .project-img ul{
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+
+.project-img ul li a:hover{
+  background-color: #037fff;
+  color: white;
+}
+
+/* .a */
