@@ -1,4 +1,4 @@
-<img src='./Projects/portfolio/public/TriwebAPI (1).png' width='350px'>
+<img src='./Projects/portfolio/public/TriwebAPI.jpg' width='350px'>
                                                     
 <h1> 3 months Internship program </h1>
 
