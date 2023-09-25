@@ -5,6 +5,24 @@
   z-index: -10;
 }
 
+.my-details {
+  position: relative;
+  animation: blinkAnime 3s ease-out;
+  z-index: 10;
+}
+
+@keyframes blinkAnime {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home-title {
   animation: bounce 2s ease-out;
 }
@@ -18,17 +36,115 @@
   }
 }
 
-.my-details {
-  animation: blinkAnime 3s ease-out;
+.bubble-background {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  opacity: 1;
+  overflow: hidden;
+  z-index: 0;
 }
-@keyframes blinkAnime {
+.bubble {
+  border-radius: 50%;
+  box-shadow: 0 0px 0px #0003, inset 0 10px 35px 5px #5f5858;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+
+.b-1 {
+  animation: animateBubble 25s linear infinite,
+    sideways 4s ease-in-out infinite alternate;
+  left: -5%;
+  top: 5%;
+  transform: scale(0.6);
+}
+
+.b-2 {
+  animation: animateBubble 20s linear infinite,
+    sideways 8s ease-in-out infinite alternate;
+  left: 5%;
+  top: 80%;
+  transform: scale(0.4);
+}
+
+.b-3 {
+  animation: animateBubble 28s linear infinite,
+    sideways 3s ease-in-out infinite alternate;
+  left: 10%;
+  top: 40%;
+  transform: scale(0.7);
+}
+
+.b-4 {
+  animation: animateBubble 30s linear infinite,
+    sideways 6s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0%;
+  transform: scale(0.3);
+}
+
+.b-5 {
+  animation: animateBubble 35s linear infinite,
+    sideways 4s ease-in-out infinite alternate;
+  left: 20%;
+  top: 0%;
+  transform: scale(0.5);
+}
+.b-6 {
+  animation: animateBubble 40s linear infinite,
+    sideways 5s ease-in-out infinite alternate;
+  left: 50%;
+  top: 0;
+  transform: scale(0.8);
+}
+.b-7 {
+  animation: animateBubble 19s linear infinite,
+    sideways 6s ease-in-out infinite alternate;
+  left: 65%;
+  top: 70%;
+  transform: scale(0.9);
+}
+.b-8 {
+  animation: animateBubble 24s linear infinite,
+    sideways 4s ease-in-out infinite alternate;
+  left: 80%;
+  top: 10%;
+  transform: scale(0.3);
+}
+.b-9 {
+  animation: animateBubble 29s linear infinite,
+    sideways 7s ease-in-out infinite alternate;
+  left: 60%;
+  top: 50%;
+  transform: scale(0.6);
+}
+.b-10 {
+  animation: animateBubble 32s linear infinite,
+    sideways 8s ease-in-out infinite alternate;
+  left: 80%;
+  top: 80%;
+  transform: scale(0.5);
+}
+
+@keyframes animateBubble {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
+    margin-top: 1000px;
   }
   100% {
-    opacity: 1;
+    margin-top: -100%;
+  }
+}
+
+@keyframes sideways {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 100px;
   }
 }
