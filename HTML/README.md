@@ -1,6 +1,6 @@
 # Description
 *My all work of HTML. Get my works in differnt folders related to particular work.*
 
-**● form :** I create a registration form with different input fields.
+**● form :** A registration form with different input fields. Explore form tag and different input tags and their attribute [Registration Form](./Form/form.html)
 
-**● time-table :** Build a my daily routine using table tag and its children tags.
+**● time-table :** My daily routine using table tag and its children tags. [Daily Routine Table](./time-table/timeTable.html)
