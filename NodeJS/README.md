@@ -1,22 +1,20 @@
 # Description
-I put everything in this folder that I learn and implement concepts of NodeJS.
+Explore NodeJS and fundamental of programming. Strong your hands over programming.
 
-● get-post-express folder: I Create app using express package. Run it into port localhost:3000 using listen method. Use get and post method for pages. I create a small calculator basically using controllers and routers. I put everything in get-post-express folder.
+## How to Proceed
+Description are provided to all files about what it contains. Navigate to different files provided down below according to your need.
 
-● CRUD: In this folder I created a backend app and server through which user can send,get,update and delete his/her data from database. I use MVC(model, view controller) architecture where I connect model with database.
+● **[CRUD](./CRUD/README.md) :** A backend server through which user can send, get, update and delete his/her data from database. This link will redirect to README file of this project.
 
-● Sequelize: You will get here some files which together makes a server to send user data to databse, delete user data from datebase, update databse data and get user data from database (model->user.js). To connect database with server I use sequelize (database.js) here.
+● **[get-post-express](./get-post-express/README.md) :** A backend for arithmatic operation. This link will redirect to README file of this project.
 
-● condition.js: Print greatest number using if-else statement.
+● **[Sequelize](./sequelize/README.md) :** A server to send user data to databse, delete user data from datebase, update databse data and get user data from database. This link will redirect to README file of this project.
 
-● loop.js: Print even and odd number from an array using loop.
+● **[break](./break.js) and [break-or-completed-loop](./breaked%20or%20completed%20loop.js) :** Explore break statement, how it break the loop.
 
-● breaked or completed loop.js: I checked whether loop is iterated completely  or been break in between.
+● **[continue](./continue.js) and [continue-track](./continue-track.js) :** Explore continue statement, how it works.
 
-● continue-track.js: In this file I check how many time continue statement is called in a loop
+● [series](./series/) : Explore different series pattern of * using loop.
 
-● series : Print different series and pattern using loop.
+● [table](./table.js): Table of any number using while loop
 
-● table.js: Contain code for printing table of any number.
-
-● recursion.js: This folder contain recursion function.

@@ -3,6 +3,8 @@
                                                     
 This is a MERN stack internship.In this internship I get familiar with different-different technoligies related to Web Development like HTML, CSS, Javascript,NodeJS and so on.
 
+# Tech Used
+
 ![Static Badge](https://img.shields.io/badge/html-white?logo=html5)
 ![Static Badge](https://img.shields.io/badge/css3-green?logo=css3)
 ![Static Badge](https://img.shields.io/badge/Javascript-%23881337?logo=javascript)

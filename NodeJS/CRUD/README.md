@@ -1,11 +1,12 @@
 # About Project
 
-A backend server for a user using Express and typescript. APIs are provided for register and update user. API structure consist router, controller and model. 
+A backend server for create a profile for user using Express and NodeJS. APIs are provided for register get, delete and update user. API structure consist router, controller and model. Database is also connected with this backend.
 
 # Tech used
 
 ![Static Badge](https://img.shields.io/badge/Express-%23134E4A)
-![Static Badge](https://img.shields.io/badge/typescript-%230C4A6E?logo=typescript)
+![Static Badge](https://img.shields.io/badge/NodeJS-%230C4A6E)
+
 
 
 # Pre-requisite
@@ -18,24 +19,21 @@ VS code
 
 git
 
-yarn 
-
-nodemon
-
 postman
+
 # Intallation
 The following commands install and run the development version
 
 ``` 
 git clone 'link-of-my-repo '
 
-cd Typescript
+cd NodeJS
 
-cd project-1
+cd CRUD
 
-yarn install
+npm install
 
-yarn start:dev
+npm start
 ```
 
 # Run Server
@@ -46,7 +44,6 @@ localhost:3000/user/register - for register the user
 
 localhost:3000/user/update - for upate the user
 
+localhost:3000/user/get - for get the user
 
-
-
-
+localhost:3000/user/delete - for delete the user
