@@ -29,5 +29,5 @@
 
 
 
-[**day-12 :**](./day-12/README.md) Explore generators and iterators. Explore thiese advance concepts of js.
+[**day-12 :**](./day-12/README.md) Explore generators and iterators. Explore these advance concepts of js.
 

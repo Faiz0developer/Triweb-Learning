@@ -1,10 +1,8 @@
 # Description
- Learn basic of MySQL, how it works, how to use it. Implement CRUD operation.
 
-phpMyAdmin -> Work on phpMyAdmin ->
+ Learn and explore basic of MySQL, how it works, how to use it and how to use its queries. Implement CRUD operation. Click to the link given down below to navigate to particular folder's README file.
 
-● Create database 'mysql_workshop-2021' and some table. Implement Crud operations in these tables and SELECT and other queries.
+**phpMyAdmin :** Work on phpMyAdmin. Navigate through this link [phpMyAdmin](./phpMyAdmin/README.md).
 
-workbench -> Implement queries on workbench ->
 
-● Create database 'workshop2' and some tables and implement Crud operations in these tables SELECT and other queries like join,order by, group by.
+**workbench :** Implement queries on workbench.Navigate through this link [workbench](./workbench/README.md)

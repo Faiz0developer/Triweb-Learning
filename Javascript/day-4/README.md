@@ -10,8 +10,8 @@ Description are provided to all files about what it contains. Navigate to differ
 
 ● **hoist-function :** Get to know about hoisting of function. Navigate through this link [hoist-function](./hoist-function.js).
 
-● take two numbers from user and add both number using function (user-input.js).
+● **user-input :** Two numbers from user and add both number using function. Navigate through this link [user-input](./user-input.js).
 
-● make and call a function inside of another funtiion (nested-function.js).
+● **nested-function :** Call a function inside of another funtiion. Navigate through this link [nested-function](./nested-function.js).
 
-● loop over number using Recursion function with different-different methods of recursion (recursion-function.js)
+● **recursion-function :** Explore Recursion function and different methods of recursion. Navigate through this link [recursion-function](./recursion-function.js)
