@@ -1,6 +1,9 @@
 # About Project
 A basic project on javascript in which user can put his/her name and can move his/her name in squares(red,green,blue and yellow).By clicking on 'move-to-red' button name will be move to red square and by clicking on 'move-to-green' button name will move to green square.
 
+# Demo
+
+https://github.com/Faiz0developer/Triweb-Learning/assets/109781488/2a3d0c9b-229c-425f-8b0d-85502890011a
 
 # Tech used
 ![Static Badge](https://img.shields.io/badge/html-white?logo=html5)
