@@ -1,6 +1,11 @@
 # About Project
 Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in notebook similary now you can play in the screen. Different concepts used of reactJs like props, state, hooks, components and so on. 
 
+# Demo
+
+https://github.com/Faiz0developer/Triweb-Learning/assets/109781488/cd57d501-3abe-4f35-9f69-7be5f58e5e76
+
+
 
 # Tech used
 ![Static Badge](https://img.shields.io/badge/html-white?logo=html5)
