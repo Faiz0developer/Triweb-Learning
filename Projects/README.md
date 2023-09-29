@@ -1,9 +1,16 @@
 # Description
 
-1. BasicJsProject -: I created a basic project on javascriptin which user can put his/her name and can move his/her name in squares(red,green,blue and yellow).By clicking on 'move-to-red' button name will be move to red square and by clicking on 'move-to-green' button name will move to green square.
+Welcome to my projects bundle. Here you will get all projects in different tech which I build in this internship. From here navigate to the README file of particular project through links provided down below.
 
-2. QuizManager -: Created REST APIs for a quiz app using node with typescript and mongoDB.In this folder you will get different different APIs like for register user,login user, create quiz,get quiz, publish quiz , report API and so on.
+1. **[BasicJsProject](./BasicJSProject/README.md) :** A basic project using vanilla Javascript. Feel free to check the project.
 
-3. quiz-app-frontend-: I created a frontend side of QuizManager backend using React. In this project I created User Register and Login page. User can register using the regisration api and similarly he/she can login as data is store in database.
+2. **[Portfolio](./portfolio/README.md) :** A portfolio website to introduce myself and my skills
 
-4. TicTacToe-: Created a tic-tac-toe game using react and its differnt concepts.
+3. **[quiz-app-frontend](./quiz-app-frontend/README.md) :** Frontend of Quiz App for register and login APIs only right now.
+
+4. **[QuizManager](./QuizManager/README.md) :** A backend of Quiz App with lots of APIs using express and typescript.
+
+
+5. **[TicTacToe](./TicTacToe/README.md) :** A tic-tac-toe game using react and its differnt concepts. Strong the concepts of react.
+
+6. **[triwweb-api-clone](./triwweb-api-clone/README.md) :** Clone of triweb API website.

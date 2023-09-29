@@ -1,5 +1,5 @@
 # About Project
-Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in notebook similary now you can play in the screen. Different concepts used of reactJs like props, state, hooks, components and so on. 
+Clone of TriwebAPI website. It just a landing of this website. Strong your hand more on react using this project. Learn to design and animate your website. Get to know how to create a layout of a website and folder structure.
 
 
 # Tech used
@@ -29,10 +29,10 @@ git clone 'link-of-my-repo '
 
 cd Projects
 
-cd TicTacToe
+cd triwweb-api-clone
 
 npm install
 
-npm run dev
+npm start
 
 ```

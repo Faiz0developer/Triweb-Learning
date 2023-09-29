@@ -1,13 +1,11 @@
 # About Project
-Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in notebook similary now you can play in the screen. Different concepts used of reactJs like props, state, hooks, components and so on. 
+A basic project on javascript in which user can put his/her name and can move his/her name in squares(red,green,blue and yellow).By clicking on 'move-to-red' button name will be move to red square and by clicking on 'move-to-green' button name will move to green square.
 
 
 # Tech used
 ![Static Badge](https://img.shields.io/badge/html-white?logo=html5)
 ![Static Badge](https://img.shields.io/badge/css3-green?logo=css3)
 ![Static Badge](https://img.shields.io/badge/Javascript-%23881337?logo=javascript)
-![Static Badge](https://img.shields.io/badge/React-%23164E63?logo=react)
-![Static Badge](https://img.shields.io/badge/tailwind%20CSS-%23881337?logo=tailwindcss)
 
 
 
@@ -15,11 +13,11 @@ Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in not
 
 To follow this project, following are the pre-requisite
 
-NodeJS
-
 VS code
 
 git
+
+postman
 
 # Installation
 The following commands install and run the development version
@@ -29,10 +27,6 @@ git clone 'link-of-my-repo '
 
 cd Projects
 
-cd TicTacToe
-
-npm install
-
-npm run dev
+cd BasicJSProject
 
 ```

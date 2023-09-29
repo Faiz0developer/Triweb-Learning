@@ -13,6 +13,9 @@ This is a MERN stack internship.In this internship I get familiar with different
 ![Static Badge](https://img.shields.io/badge/mongodb-%2378350F?logo=mongodb)
 ![Static Badge](https://img.shields.io/badge/nodejs-%23701A75)
 ![Static Badge](https://img.shields.io/badge/express-%23365314)
+![Static Badge](https://img.shields.io/badge/tailwind%20CSS-%23881337?logo=tailwindcss)
+![Static Badge](https://img.shields.io/badge/Bootstrap-%23701A75?logo=tailwindcss)
+
 
 
 
@@ -29,7 +32,7 @@ This is a MERN stack internship.In this internship I get familiar with different
 
 [● Javascript](./Javascript/README.md) : Core concepts of javascript. Here deep dive into JS from basics to advance concepts.
 
-[● Projects](./Projects/README.md) : 
+[● Projects](./Projects/README.md) : Navigate to **Project** folder to see projects. Navigate README file of this folder using this link
 
 [● MySQL](./MySQL/README.md) : Learn concepts of database and explore mysql queries and implement in your code.
 

@@ -1,5 +1,5 @@
 # About Project
-Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in notebook similary now you can play in the screen. Different concepts used of reactJs like props, state, hooks, components and so on. 
+Portfolio website to introduce myself and my skils. Get to know about my learning, education, skills, projects that I have build. 
 
 
 # Tech used
@@ -8,6 +8,7 @@ Tic-Tac-Toe game using ReactJS. As in childhood we used to play this game in not
 ![Static Badge](https://img.shields.io/badge/Javascript-%23881337?logo=javascript)
 ![Static Badge](https://img.shields.io/badge/React-%23164E63?logo=react)
 ![Static Badge](https://img.shields.io/badge/tailwind%20CSS-%23881337?logo=tailwindcss)
+![Static Badge](https://img.shields.io/badge/Bootstrap-%23701A75?logo=tailwindcss)
 
 
 
@@ -21,6 +22,7 @@ VS code
 
 git
 
+
 # Installation
 The following commands install and run the development version
 
@@ -29,10 +31,10 @@ git clone 'link-of-my-repo '
 
 cd Projects
 
-cd TicTacToe
+cd Portfolio
 
 npm install
 
-npm run dev
+npm start
 
 ```

@@ -23,7 +23,7 @@ yarn
 nodemon
 
 postman
-# Intallation
+# Installation
 The following commands install and run the development version
 
 ``` 
