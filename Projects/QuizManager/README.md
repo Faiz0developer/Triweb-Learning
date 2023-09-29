@@ -52,15 +52,21 @@ Now on postman hit the following http
 **For Create Quiz**
 
 *localhost:3000/quiz/ - for create a quiz*
+
 *localhost:3000/quiz/quizId? - to get a quiz*
+
 *localhost:3000/quiz/quizId - for delete a quiz*
+
 *localhost:3000/quiz/publish - for publish a quiz*
 
 **For Exam**
+
 *localhost:3000/exam/quizId - for get a quiz and start exam*
+
 *localhost:3000/exam/ - for submit the exam*
 
 **For Report
+
 *localhost:3000/report/reportId? - to get the report*
 
 

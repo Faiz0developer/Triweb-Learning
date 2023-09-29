@@ -3,6 +3,13 @@
                                                     
 This is a MERN stack internship.In this internship I get familiar with different-different technoligies related to Web Development like HTML, CSS, Javascript,NodeJS and so on.
 
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/Faiz0developer/Triweb-Learning)
+![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Faiz0developer/Triweb-Learning)
+![GitHub top language](https://img.shields.io/github/languages/top/Faiz0developer/Triweb-Learning?color=%237F1D1D)
+![GitHub language count](https://img.shields.io/github/languages/count/Faiz0developer/Triweb-Learning?color=%2314532D)
+
+
+
 # Tech Used
 
 ![Static Badge](https://img.shields.io/badge/html-white?logo=html5)
@@ -45,3 +52,12 @@ This is a MERN stack internship.In this internship I get familiar with different
 [● TypeScript](./TypeScript/README.md) : Dive into typescript. Introduce differnt concepts of typescript like interface, union and so on. Also learn how to create backend in typescript and express.
 
 [● React](./React/README.md) : Very important library of JS for building UI. Will get familiar with react and its concepts like props, hooks, state and so on.
+
+# References
+HTML - https://developer.mozilla.org/en-US/docs/Web/HTML
+
+CSS- https://www.w3schools.com/css/
+
+Express - https://expressjs.com/
+
+ReactJs - https://react.dev/learn
