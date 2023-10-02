@@ -7,7 +7,7 @@ const PortfolioPage = () => {
       <div className="py-3 px-4">
         <div className="mb-12 relative ">
           <h2 className="relative text-[#ffffff] font-semibold text-4xl uppercase">
-            Portfolios
+            Projects
           </h2>
         </div>
         <div className="row pb-10">

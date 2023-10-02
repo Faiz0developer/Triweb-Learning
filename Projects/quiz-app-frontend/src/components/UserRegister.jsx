@@ -5,51 +5,48 @@
 const UserRegister = (props) => {
   return (
     <>
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="name">Name</label>
+      <div className="flex flex-col gap-1 text-[#0F172A]">
         <input
           type="text"
           id="name"
           onChange={(e) => props.userName(e.target.value)}
           //   value={userName}
           placeholder="Enter your name"
-          className="py-2 text-black"
+          name=""
+          className="py-2 text-black bg-transparent border-b-2 border-[#0F172A] focus:outline-none"
         />
       </div>
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="email">Email</label>
+      <div className="flex flex-col gap-1.5 text-[#0F172A]">
         <input
           type="text"
           id="email"
           onChange={(e) => props.userEmail(e.target.value)}
           //   value={userEmail}
           placeholder="Enter your email"
-          className="py-2 text-black"
+          className="py-2 text-black bg-transparent border-b-2 border-[#0F172A] focus:outline-none"
         />
       </div>
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="password">Password</label>
+      <div className="flex flex-col gap-1.5 text-[#0F172A]">
         <input
           type="text"
           id="password"
           onChange={(e) => props.userPassword(e.target.value)}
           //   value={userPassword}
           placeholder="Enter password"
-          className="py-2 text-black"
+          className="py-2 text-black bg-transparent border-b-2 border-[#0F172A] focus:outline-none"
         />
       </div>
-      <div className="flex flex-col gap-1.5">
-        <label htmlFor="confirmPassword">Confirm Password</label>
+      <div className="flex flex-col gap-1.5 text-[#0F172A]">
         <input
           type="text"
           id="confirmPassword"
           onChange={(e) => props.userConfirmPassword(e.target.value)}
           //   value={userConfirmPassword}
           placeholder="Confirm your password"
-          className="py-2 text-black"
+          className="py-2 text-black bg-transparent border-b-2 border-[#0F172A] focus:outline-none"
         />
       </div>
-      <button className="bg-[#78350F] border-[#78350F] rounded-lg py-3">
+      <button className="bg-[#2563EB] border-[#78350F] rounded-lg py-1.5">
         Register
       </button>
     </>
