@@ -4,8 +4,7 @@
 **● form :** A registration form with different input fields. Explore form tag and different input tags and their attribute.
 
 Screenshot of Registration form :-
-<img src='./Form/form.png' width='350px'>
-
+<img src='./Form/form.png'>
 
 
  Navigate to html file of form direct  through this link 👉 [Registration Form](./Form/form.html)

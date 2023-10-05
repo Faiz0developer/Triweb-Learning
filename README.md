@@ -1,5 +1,7 @@
-<h1 style="color:blue;text-align:center">Triweb Learning</h1>
-<img src='./Projects/portfolio/public/TriwebAPI.jpg' width='350px' style="display:block; margin-left:auto;margin-right:auto">
+<h1 align=center style="color:blue">Triweb Learning</h1>
+<p align=center>
+<img src='./Projects/portfolio/public/TriwebAPI.jpg' width='350px'>
+</p>
                                                     
 This is a MERN stack internship.In this internship I get familiar with different-different technoligies related to Web Development like HTML, CSS, Javascript,NodeJS and so on.
 
@@ -39,7 +41,22 @@ This is a MERN stack internship.In this internship I get familiar with different
 
 [● Javascript](./Javascript/README.md) : Core concepts of javascript. Here deep dive into JS from basics to advance concepts.
 
-[● Projects](./Projects/README.md) : Navigate to **Project** folder to see projects. Navigate README file of this folder using this link
+[● Projects](./Projects/README.md) : Navigate to **Project** folder to see projects. Navigate README file of this folder using this link.
+
+Navigate to README of particular project -> 
+
+* **[BasicJsProject](./Projects/BasicJSProject/README.md) :** A basic project using vanilla Javascript. Feel free to check the project.
+
+* **[Portfolio](./Projects/portfolio/README.md) :** A portfolio website to introduce myself and my skills
+
+* **[quiz-app-frontend](./Projects/quiz-app-frontend/README.md) :** Frontend of Quiz App for register and login APIs only right now.
+
+* **[QuizManager](./Projects/QuizManager/README.md) :** A backend of Quiz App with lots of APIs using express and typescript.
+
+
+* **[TicTacToe](./Projects/TicTacToe/README.md) :** A tic-tac-toe game using react and its differnt concepts. Strong the concepts of react.
+
+* **[triwweb-api-clone](./Projects/triwweb-api-clone/README.md) :** Clone of triweb API website.
 
 [● MySQL](./MySQL/README.md) : Learn concepts of database and explore mysql queries and implement in your code.
 
