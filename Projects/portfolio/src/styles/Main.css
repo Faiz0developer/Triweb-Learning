@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Black+Ops+One&display=swap');
+
 .bg-img {
   background-image: url("https://devis-react.vercel.app/images/background/hero-bg.jpg");
   background-repeat: no-repeat;

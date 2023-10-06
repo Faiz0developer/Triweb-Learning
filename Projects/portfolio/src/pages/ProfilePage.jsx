@@ -7,7 +7,7 @@ import Experience from "../components/Profile/Experience";
 
 const AboutPage = () => {
   return (
-    <section className="relative pt-20 text-[#a4acc4] pb-6">
+    <section className="relative pt-20 text-[#a4acc4] pb-6 font-[BlackOpsOne]">
       <div className="bg-top"></div>
       <div className="px-4">
         <div className="mb-12 relative">

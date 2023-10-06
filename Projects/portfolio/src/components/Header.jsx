@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header-style ${
+        className={`header-style font-[BlackOpsOne] ${
           isNavBarHidden ? " header-style-hidden" : "header-style-visible"
         }`}
       >
@@ -41,12 +41,6 @@ const Header = () => {
                 className={({ isActive }) => (isActive ? "active" : "")}
                 navData="PROFILE"
               />
-              {/* <NavbarLink
-                onChangeVisivility={ChangeNavVisibility}
-                to="/resume"
-                className={({ isActive }) => (isActive ? "active" : "")}
-                navData="RESUME"
-              /> */}
               <NavbarLink
                 onChangeVisivility={ChangeNavVisibility}
                 to="/skills"
@@ -66,6 +60,7 @@ const Header = () => {
                 navData="CONTACT"
               />
             </ul>
+            <h1 className="mt-10 text-center text-[#a4acc4] text-xl">&#169; Faizan Siddiqui</h1>
           </div>
         </div>
         <div

@@ -5,7 +5,7 @@ import ContactForm from "../components/Contact/ContactForm";
 
 const ContactPage = () => {
   return (
-    <section className="contact-section relative pt-20 text-[#a4acc4] pb-6">
+    <section className="contact-section relative pt-20 text-[#a4acc4] pb-6 font-[BlackOpsOne]">
       <div className="py-3 px-3 ">
         <div className="mb-12 relative ">
           <h1 className="relative text-[#ffffff] font-semibold text-4xl uppercase">

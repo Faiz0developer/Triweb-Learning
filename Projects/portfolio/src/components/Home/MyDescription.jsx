@@ -7,7 +7,7 @@ const MyDescription = () => {
       <div className="my-details text-center">
         <h1 className="home-title text-[40px] min-[340px]:text-[45px] md:text-[60px] text-white mb-6">
           Hi, I am
-          <span className="text-[#fec544] max-[550px]:block">
+          <span className="text-[#037FFF] max-[550px]:block">
             {" "}
             Faizan Siddiqui
           </span>

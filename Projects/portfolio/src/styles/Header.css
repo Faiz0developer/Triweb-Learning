@@ -63,6 +63,7 @@
 .left-container {
   border-bottom: 1px solid #101624;
   padding-bottom: 40px;
+  margin-bottom: 20px;
 }
 .img-container {
   width: 190px;
@@ -73,33 +74,29 @@
 }
 
 .active {
-  color: #fec544;
-  border: 1px solid #d97706;
+  color: #fff;
+  background-color: #037fff;
 }
 
 .right-container {
   display: block;
   padding: 15px 5px;
-}
-
-.right-container li {
-  margin-bottom: 6px;
-  display: block;
+  border-bottom: 1px solid #101624;
 }
 .right-container li a {
   display: block;
   position: relative;
   letter-spacing: 1px;
-  padding: 8px 0;
+  padding: 10px 0;
   text-align: center;
   transition: all 0.5s ease-out;
   z-index: 1;
   overflow: hidden;
-  background-color: rgba(3, 127, 255, 0.2);
+  font-weight: 600;
 }
 
 .right-container li a::before {
-  background-color: rgba(3, 127, 255, 0.2);
+  background-color: rgba(3,127,255,.2);
   content: "";
   height: 100%;
   left: 0;
@@ -110,6 +107,15 @@
   visibility: hidden;
   width: 0;
   z-index: -1;
+}
+
+.right-container li a:hover::before{
+  visibility: visible;
+  width: 100%;
+}
+
+.right-container li a:hover{
+  color: #0d6efd;
 }
 
 @media screen and (max-width: 1023px) {
