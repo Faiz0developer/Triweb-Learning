@@ -57,7 +57,7 @@ const Header = () => {
                 onChangeVisivility={ChangeNavVisibility}
                 to="/portfolio"
                 className={({ isActive }) => (isActive ? "active" : "")}
-                navData="PROJECT"
+                navData="PROJECTS"
               />
               <NavbarLink
                 onChangeVisivility={ChangeNavVisibility}
