@@ -1,4 +1,4 @@
-// promise
+// promise -> for async javsscript we use promise for wait
 function func1() {
   return "Function 1";
 }
