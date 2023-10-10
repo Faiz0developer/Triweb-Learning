@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "lodas": "^1.2.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "ramda": "^0.29.1"
   }
 }
