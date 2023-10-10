@@ -1,11 +1,11 @@
-// Promise.any(iterator) -> return the value of very first promise get resolved.
-// -> If no pomise is rsolved i.e all promises get rejected then it will throw error
-
+// Promise.race(iterator) -> it return value of very first promise whether it
+// -> get resolved
+// -> or it get rejected
 
 function func1(){
     return new Promise((res,rej) => {
         setTimeout(() =>{
-            rej('Function1')
+            res('Function1')
         },2000)
     }) 
 }
@@ -21,9 +21,9 @@ function func2(){
 function func3(){
     return new Promise((res,rej) => {
         setTimeout(() =>{
-            rej('Function3')
+            res('Function3')
         },1000)
     }) 
 }
 
-Promise.any([func1(), func2(),func3()]).then((results => console.log(results))).catch((error) => console.log(error))
+Promise.race([func1(), func2(),func3()]).then((results => console.log(results))).catch((error) => console.log('error',error))
