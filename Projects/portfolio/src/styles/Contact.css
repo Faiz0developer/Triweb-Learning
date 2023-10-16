@@ -53,8 +53,3 @@
   }
 }
 
-@media screen and (min-height: 700px) {
-  .contact-section {
-    height: 130vh;
-  }
-}
