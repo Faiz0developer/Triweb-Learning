@@ -1,14 +1,13 @@
-import React, { useState } from "react";
 import "../styles/Header.css";
 import MyImage from "../assets/my-img.png";
 import NavbarLink from "./ui/NavbarLink";
 
-const Header = () => {
-  const [isNavBarHidden, setIsNavBarHidden] = useState(true);
+const Header = ({isNavBarHidden, setIsNavBarHidden}) => {
 
   const ChangeNavVisibility = () => {
     setIsNavBarHidden(true);
   };
+
 
   return (
     <>
