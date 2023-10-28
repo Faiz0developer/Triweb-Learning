@@ -10,13 +10,15 @@ function mergeSortWithoutRecursion(arr) {
 
   const mergeArray = mergeTwoSortedArray(sub1Sorted, sub2Sorted); //[-6,-2,4,7,8,20]
 
-  return mergeTwoSortedArray(sub3Sorted, mergeArray);  //[-6, -2, 4, 7, 8, 8, 19, 20]
+  const mergedArray =  mergeTwoSortedArray(sub3Sorted, mergeArray);  //[-6, -2, 4, 7, 8, 8, 19, 20]
+
+  return mergedArray
 }
 
 function sort(subArr) {
-  const sortedArr = [];
-  sortedArr.length = subArr.length;
-  let index = 1;
+  // const sortedArr = [];
+  // sortedArr.length = subArr.length;
+  // let index = 1;
   let i = 0;
   while (i < subArr.length) {
     for (let j = i + 1; j < subArr.length; j++) {
@@ -33,7 +35,7 @@ function sort(subArr) {
 
 function mergeTwoSortedArray(sortedArr1, sortedArr2) {
   let c1 = 0;
-  let c2 = 0;
+  // let c2 = 0;
   let newArr = [];
 
   outer: for (let x = 0; x < sortedArr1.length; x++) {
@@ -44,7 +46,7 @@ function mergeTwoSortedArray(sortedArr1, sortedArr2) {
         break outer;
       } else if (sortedArr1[x] < sortedArr2[y]) {
         newArr.push(sortedArr1[x]);
-        c2++;
+        // c2++;
         break;
       } else {
         newArr.push(sortedArr2[y]);
@@ -59,15 +61,16 @@ function mergeTwoSortedArray(sortedArr1, sortedArr2) {
     x = -1;
   }
   if (sortedArr2.length) {
-    newArr.push(sortedArr2[0]);
+    newArr.push(...sortedArr2);
   }
   return newArr;
 }
 
+// const arr = [12,-13,-11];
 const arr = [8, 20, -2, 4, -6, 7, 8, 19];
 // const arr = [
 //   12, 54, 68, 34, 67, 45, 23, 45, 8, 6, 344, 6, 8, 4, 23, 34, 67, 6, 312, 67, 9,
-//   36, 24, 6,
+//   36, 24, 6,5,213123,77,131232,78,445,12323,799,23,754,898,4566467,8746767464756,7467463766,37643764234,23,46,379,237,34
 // ];
 console.log('Merge sorting without recursion - ', mergeSortWithoutRecursion(arr));
 
@@ -102,6 +105,11 @@ function merge(leftArr, rigthArr) {
   return [...sortedArr, ...leftArr, ...rigthArr];
 }
 
-const arr1 = [8, 20, -2, 4, -6, 7, 8, 19];
+const arr1 = [12,10,-11];
+// const arr1 = [8, 20, -2, 4, -6, 7, 8, 19];
+// const arr1 = [
+//   12, 54, 68, 34, 67, 45, 23, 45, 8, 6, 344, 6, 8, 4, 23, 34, 67, 6, 312, 67, 9,
+//   36, 24, 6,5,213123,77,131232,78,445,12323,799,23,754,898,4566467,8746767464756,7467463766,37643764234,23,46,379,237,34
+// ];
 
 console.log("Merge sorting with recursion - ", mergeSortWithRecursion(arr1));
