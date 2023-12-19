@@ -75,7 +75,7 @@ const loginUser = async (req: Request, res: Response, next: NextFunction) => {
         resp = {
           status: "success",
           message: "Logged in successfully",
-          data: { token,userid:user._id },
+          data: { token,userid:user._id,name:user.name },
         };
         res.send(resp);
       } else {
