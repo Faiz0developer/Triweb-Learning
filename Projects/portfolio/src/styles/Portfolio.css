@@ -1,9 +1,9 @@
-.portfolio-project{
-  padding: 4px 4px 0px ;
+.portfolio-project {
+  padding: 4px 4px 0px;
   overflow: hidden;
   cursor: pointer;
 }
-.portfolio-project::before{
+/* .portfolio-project::before{
   content: "";
   position: absolute;
   top: 50%;
@@ -17,47 +17,70 @@
 }
 .portfolio-project:hover::before{
   transform: translate(-50%,-50%) rotate(-100deg);
-}
+} */
 .project-container {
   position: relative;
   z-index: 50;
   height: 98%;
   width: 98%;
   margin: auto;
-  padding: 4px;
-  background-color: #000;
+  padding: 14px;
+  background-color: #1c1f26;
+  border: 1px solid #383d48;
+  border-radius: 10px;
+}
+.project-container:hover{
+  border: 1px solid #E2E8F0;
+}
+.project-container h2{
+  margin-top: 20px;
+  padding: 12px 3px 4px;
 }
 
 .project-container h2 a {
-  font-size: 28px;
-  padding-bottom: 8px;
+  font-size: 20px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: all 0.4s ease-out;
 }
-.project-container p{
-  font-weight: 700;
-  background-image: linear-gradient(to right, #fff, black ); 
-  -webkit-text-fill-color:transparent;
-  -webkit-background-clip: text;
+.project-container p {
+  padding: 3px;
+  font-weight: 400;
+  /* background-image: linear-gradient(to right, #fff, black );  */
+  /* -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text; */
+  color: #94A3B8;
+  font-size: 16px;
 }
 
-.project-img::before{
+.project-img {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  padding: 3px;
+}
+.project-img::before {
   content: "";
-  background-color: hsla(0,0%,100%,.9);
-  height: 100%;
-  left: 0px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  height: 81%;
+  left: 7px;
   position: absolute;
   transform: scaleX(0);
   transform-origin: 0;
   transition: all 0.4s ease-out;
-  width: 100% ;
+  width: 95%;
+  top: 4px;
+  margin-top: 32px;
 }
-.project-img:hover::before{
+.project-img:hover::before {
   transform: scaleX(1);
 }
+/* .project-img>img{
+  width: 98%;
+} */
 
-.project-img ul{
+.project-img ul {
   position: absolute;
   width: 100%;
   display: flex;
@@ -67,9 +90,9 @@
   opacity: 0;
   visibility: hidden;
   top: 50%;
-  transition: all .4s ease-in-out .2s;
+  transition: all 0.4s ease-in-out 0.2s;
 }
-.project-img ul li a{
+.project-img ul li a {
   background-color: #a3a6aa;
   color: black;
   padding: 10px 15px;
@@ -77,15 +100,15 @@
   letter-spacing: 2px;
   border-radius: 8px;
   font-weight: 600;
-  transition: all .4s ease-out;
+  transition: all 0.4s ease-out;
 }
-.project-container:hover .project-img ul{
+.project-container:hover .project-img ul {
   opacity: 1;
   visibility: visible;
   margin-top: 0px;
 }
 
-.project-img ul li a:hover{
+.project-img ul li a:hover {
   background-color: #037fff;
   color: white;
 }

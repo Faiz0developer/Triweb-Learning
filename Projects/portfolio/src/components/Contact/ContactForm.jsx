@@ -67,7 +67,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="mt-14">
+    <div className="max-[800px]:mt-14 min-[800px]:w-1/2">
       <h1 className="text-[#d97706] text-4xl">Get In Touch</h1>
       <form
         className="form flex flex-col gap-8 mt-6"

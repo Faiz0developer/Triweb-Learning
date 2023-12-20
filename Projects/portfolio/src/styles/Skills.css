@@ -12,3 +12,10 @@
   position: absolute;
   top: 0;
 }
+
+.other-skills>h2{
+  padding: 12px 16px;
+  border: 1px solid #2e344e;
+  border-radius: 5px;
+  text-align: center;
+}

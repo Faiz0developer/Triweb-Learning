@@ -12,7 +12,7 @@ const Header = ({isNavBarHidden, setIsNavBarHidden}) => {
   return (
     <>
       <header
-        className={`header-style font-[BlackOpsOne] ${
+        className={`header-style ${
           isNavBarHidden ? " header-style-hidden" : "header-style-visible"
         }`}
       >

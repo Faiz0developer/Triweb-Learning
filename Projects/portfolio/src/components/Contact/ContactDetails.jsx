@@ -4,7 +4,7 @@ import { phonesvg, emailsvg } from "./ContactIcons";
 
 const ContactDetails = () => {
   return (
-    <>
+    <div className="min-[800px]:w-1/2">
       <ContactCard
         title="Phone"
         firstVal="+91 7618234725"
@@ -15,7 +15,7 @@ const ContactDetails = () => {
         firstVal="faizansiddiquirmr@gmail.com"
         contactsvg={emailsvg}
       />
-    </>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import Bubble from "../components/Home/Bubble";
 
 const Home = () => {
   return (
-    <section className="h-[100vh] flex justify-center items-center relative font-[BlackOpsOne]">
+    <section className="h-[100vh] flex justify-center items-center relative">
       <MyDescription/>
       <Bubble/>
     </section>

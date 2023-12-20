@@ -1,3 +1,9 @@
+.contact-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 70px;
+}
 .contact-container div span {
   display: flex;
   justify-content: center;
@@ -23,8 +29,9 @@
 }
 
 .form button {
-  background-color: #fec544;
-  width: 40%;
+  /* background-color: #fec544; */
+  background-color: #fff;
+  width: 100%;
   border-radius: 13px;
   font-size: 20px;
   font-weight: 600;
@@ -40,6 +47,12 @@
 
 .form button:active {
   transform: scale(0.8);
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container{
+    flex-direction: column;    
+  }
 }
 
 @media screen and (max-width: 640px) {

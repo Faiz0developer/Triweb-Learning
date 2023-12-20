@@ -4,7 +4,7 @@ import Skills from "../components/Skills";
 
 const SkillsPage = () => {
   return (
-    <section className="lg:h-[100vh] relative pt-20 text-[#a4acc4] pb-6 font-[BlackOpsOne]">
+    <section className="relative pt-20 text-[#a4acc4] pb-6">
       <div className="py-3 px-4">
         <div className="mb-12 relative ">
           <h2 className="relative text-[#ffffff] font-semibold text-4xl uppercase">
@@ -29,6 +29,18 @@ const SkillsPage = () => {
 
             <Skills skill="CSS3" level="75%" className="w-[75%]" />
 
+          </div>
+          <div>
+            <h1 className="text-[#fff] text-xl">Other Skills</h1>
+            <div className="other-skills flex flex-wrap gap-3 py-2">
+              <h2>Redux/Redux-Toolkit</h2>
+              <h2>Bootstrap</h2>
+              <h2>Tailwind CSS</h2>
+              <h2>Postman</h2>
+              <h2 className="w-[100px]">Jira</h2>
+              <h2 className="w-[100px]">Git</h2>
+              <h2>Material UI</h2>
+            </div>
           </div>
         </div>
       </div>
