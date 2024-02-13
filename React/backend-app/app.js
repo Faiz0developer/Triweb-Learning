@@ -32,6 +32,6 @@ app.get('/products', async(req,res)=>{
 })
 
 mongoose.connect(process.env.connectionString).then(() => {
-  app.listen(3004);
+  app.listen(process.env.port);
   console.log("Server connected");
 });
