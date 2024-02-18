@@ -1,5 +1,9 @@
 export const ProjectData = [
   {
+    title: "Quizzle",
+    discription: "A fully fledged quiz app for creating  and attempting quizzes.",
+  },
+  {
     title: "Bankist",
     discription: "A beautiful bank website, customer can tranfer money.",
   },

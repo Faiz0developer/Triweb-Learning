@@ -1,7 +1,7 @@
 import express from "express";
 import { Response, Request, NextFunction } from "express";
 import mongoose from "mongoose";
-import cors from 'cors'
+import cors from "cors";
 
 import userRouter from "./routers/user";
 import authRouter from "./routers/auth";
@@ -23,7 +23,7 @@ const connectionString = process.env.CONNECTION_STRING || "";
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 declare global {
   namespace Express {
